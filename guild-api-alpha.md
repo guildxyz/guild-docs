@@ -10,6 +10,15 @@ description: API for managing token gated access in any applications.
 
 Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
 
+Certain roles can represent a membership type or grant temporary or permanent access to any access or content in your application.
+
+Common use-cases include:
+
+1. &#x20;Permissions management for work collaboration.
+2. Membership access to articles or newsletter.
+3. Ticket to a virtual event.
+4. Special privileges in a social application.
+
 {% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
 {% swagger-description %}
 
@@ -43,7 +52,7 @@ Roles are the building-blocks of all guilds. You can create as many as you want 
 {% endswagger-response %}
 {% endswagger %}
 
-To create a new role, you need to define its requirements and set a logic between them.
+To create a new role, you need to define its requirements and the logic type of stacking these requirements.
 
 {% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
 {% swagger-description %}
@@ -277,7 +286,7 @@ Native fungible tokens of supported blockchains.
 
 ### ERC-20
 
-Commonly referred as tokens.
+Commonly referred to as tokens.
 
 ```json
 {
@@ -292,7 +301,7 @@ Commonly referred as tokens.
 
 ### ERC-721 or ERC-1155
 
-Commonly referred as NFTs.
+Commonly referred to as NFTs.
 
 ```json
 {
@@ -411,7 +420,11 @@ Guest pass for guilds.
 
 ## Guilds
 
-{% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get all the existing guilds." %}
+_"Although there is no one single definition for what a web3 guild is, they’re generally considered to be a collective of crypto-enabled developers, designers, and thinkers that share resources (be it knowledge or labour) in the pursuit of a common goal." (_[_Web3 Guilds_](https://medium.com/superfluid-blog/web3-guilds-the-rebirth-of-organized-work-e9c1a139ad29)_)_
+
+**Create a new community by creating a guild.**
+
+{% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get All Guilds" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -433,186 +446,6 @@ Guest pass for guilds.
 
 {% swagger-response status="204: No Content" description="empty response, not found" %}
 **No Guild added.**
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="get" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Get a guild by id. Guild ID could be a number or an urlName of a guild." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="id" type="string" required="true" %}
-id/urlName of the guild
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="guild object" %}
-```json
-{
-    "id": number,
-    "name": string,
-    "urlName": string,
-    "description": string,
-    "imageUrl": string,
-    "showMembers": boolean,
-    "admins": [
-        {
-            "id": number,
-            "address": string,
-            "isOwner": boolean
-        },
-    ],
-    "theme": {
-            "mode": "DARK" | "LIGHT",
-            "color": string,
-            "backgroundCss": string,
-            "backgroundImage": string
-    },
-    "platforms": [
-        {
-            "id": number,
-            "platformId": string,
-            "type": "DISCORD" | "TELEGRAM",
-            "platformName": string,
-        }
-    ],
-    "roles": [
-                {
-                    "id": number,
-                    "name": string,
-                    "description": string,
-                    "imageUrl": string,
-                    "logic": "AND" | "OR" | "NAND" | "NOR",
-                    "requirements": Requirement[],
-                    "members": string[], // array of addresses
-                    "memberCoun": number,
-                
-                }
-    ]       
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="204: No Content" description="empty response, not found" %}
-**Specified Guild doesn't exist with the given ID or urlName.**
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="get" path="/guild/access/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User access to a Guild based on the Guild requirements." %}
-{% swagger-description %}
-The response is separated by role identifiers.
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="id" type="number" required="true" %}
-id of the guild
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="address" type="string" required="true" %}
-address of the user
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="array of accesses" %}
-```json
-[
-   {
-      "roleId":2339,
-      "access":true
-   },
-   {
-      "roleId":2015,
-      "access":true
-   },
-   {
-      "roleId":99,
-      "access":false
-   }
-]
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="500: Internal Server Error" description="errors occurred, but response still available" %}
-```json
-[
-   {
-      "roleId":2540,
-      "access":true
-   },
-   {
-      "roleId":2560,
-      "access":null,
-      "errors":[
-         {
-            "requirementId":5861,
-            "msg":"Multicall received an empty response. Check your call configuration for errors."
-         }
-      ]
-   },
-   {
-      "roleId":2537,
-      "access":false
-   },
-   {
-      "roleId":2538,
-      "access":false
-   }
-]
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User current accesses to a specific Guild." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="id" type="number" required="true" %}
-id of the guild
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="address" type="string" required="true" %}
-address of the user
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```json
-   [
-      {
-         "roleId":1034,
-         "access":false
-      },
-      {
-         "roleId":1031,
-         "access":false
-      },
-      {
-         "roleId":1175,
-         "access":true
-      }
-   ]
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
 {% endswagger-response %}
 {% endswagger %}
 
@@ -693,6 +526,321 @@ address of the user
 ```
 {% endtab %}
 {% endtabs %}
+
+{% swagger method="get" path="/guild/access/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Check User Access to a Guild" %}
+{% swagger-description %}
+The response is separated by role identifiers.
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="id" type="number" required="true" %}
+id of the guild
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="address" type="string" required="true" %}
+address of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="array of accesses" %}
+```json
+[
+   {
+      "roleId":2339,
+      "access":true
+   },
+   {
+      "roleId":2015,
+      "access":true
+   },
+   {
+      "roleId":99,
+      "access":false
+   }
+]
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occured" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="errors occurred, but response still available" %}
+```json
+[
+   {
+      "roleId":2540,
+      "access":true
+   },
+   {
+      "roleId":2560,
+      "access":null,
+      "errors":[
+         {
+            "requirementId":5861,
+            "msg":"Multicall received an empty response. Check your call configuration for errors."
+         }
+      ]
+   },
+   {
+      "roleId":2537,
+      "access":false
+   },
+   {
+      "roleId":2538,
+      "access":false
+   }
+]
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User's Membership Status in a Guild" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="id" type="number" required="true" %}
+id of the guild
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="address" type="string" required="true" %}
+address of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```json
+   [
+      {
+         "roleId":1034,
+         "access":false
+      },
+      {
+         "roleId":1031,
+         "access":false
+      },
+      {
+         "roleId":1175,
+         "access":true
+      }
+   ]
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occurred" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/user/membership/:address" baseUrl="https://api.guild.xyz/v1" summary="Get Guilds Joined by a User" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="address" type="string" required="true" %}
+address of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+[
+   {
+      "guildId":13,
+      "roleids":[
+         397
+      ]
+   },
+   {
+      "guildId":21,
+      "roleids":[
+         1175
+      ]
+   },
+   {
+      "guildId":1533,
+      "roleids":[
+         2339,
+         2015
+      ]
+   },
+]
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occurred" %}
+```javascript
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/user/join" baseUrl="https://api.guild.xyz/v1" summary="Join a Guild" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+[
+
+]
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occurred" %}
+```javascript
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="authentication required" %}
+```javascript
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% tabs %}
+{% tab title="API" %}
+```json
+{
+      "payload": {
+            "guildId": number
+      },
+      "validation": {
+      // Validation object
+      }
+}
+```
+{% endtab %}
+
+{% tab title="Guild SDK" %}
+```typescript
+???
+
+// Installation: https://github.com/alchemyplatform/alchemy-web3
+
+import { createAlchemyWeb3 } from "@alch/alchemy-web3";
+
+// Using HTTPS
+const web3 = createAlchemyWeb3(
+  "https://eth-mainnet.alchemyapi.io/v2/demo",
+);
+
+const nfts = await web3.alchemy.getNfts({owner: "0xC33881b8FD07d71098b440fA8A3797886D831061"})
+
+{
+    payload: {
+        guildId: 2124
+    }
+    validation
+}{
+```
+{% endtab %}
+{% endtabs %}
+
+{% swagger method="get" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Get a Guild by ID" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="id" type="string" required="true" %}
+id/urlName of the guild
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="guild object" %}
+```json
+{
+    "id": number,
+    "name": string,
+    "urlName": string,
+    "description": string,
+    "imageUrl": string,
+    "showMembers": boolean,
+    "admins": [
+        {
+            "id": number,
+            "address": string,
+            "isOwner": boolean
+        },
+    ],
+    "theme": {
+            "mode": "DARK" | "LIGHT",
+            "color": string,
+            "backgroundCss": string,
+            "backgroundImage": string
+    },
+    "platforms": [
+        {
+            "id": number,
+            "platformId": string,
+            "type": "DISCORD" | "TELEGRAM",
+            "platformName": string,
+        }
+    ],
+    "roles": [
+                {
+                    "id": number,
+                    "name": string,
+                    "description": string,
+                    "imageUrl": string,
+                    "logic": "AND" | "OR" | "NAND" | "NOR",
+                    "requirements": Requirement[],
+                    "members": string[], // array of addresses
+                    "memberCoun": number,
+                
+                }
+    ]       
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="204: No Content" description="empty response, not found" %}
+**Specified Guild doesn't exist with the given ID or urlName.**
+{% endswagger-response %}
+{% endswagger %}
+
+Guild ID could be a number or an urlName of a guild.
 
 {% swagger method="patch" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Guild" %}
 {% swagger-description %}
@@ -819,141 +967,6 @@ address of the user
       // Validation object
    }
 }
-```
-{% endtab %}
-{% endtabs %}
-
-## Users
-
-{% swagger method="get" path="/user/membership/:address" baseUrl="https://api.guild.xyz/v1" summary="Get every membership of a User." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" name="address" type="string" required="true" %}
-address of the user
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-[
-   {
-      "guildId":13,
-      "roleids":[
-         397
-      ]
-   },
-   {
-      "guildId":21,
-      "roleids":[
-         1175
-      ]
-   },
-   {
-      "guildId":1533,
-      "roleids":[
-         2339,
-         2015
-      ]
-   },
-]
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
-```javascript
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="post" path="/user/join" baseUrl="https://api.guild.xyz/v1" summary="Join user to a Guild" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-[
-
-]
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
-```javascript
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```javascript
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% tabs %}
-{% tab title="API" %}
-```json
-{
-      "payload": {
-            "guildId": number
-      },
-      "validation": {
-      // Validation object
-      }
-}
-```
-{% endtab %}
-
-{% tab title="Guild SDK" %}
-```typescript
-???
-
-// Installation: https://github.com/alchemyplatform/alchemy-web3
-
-import { createAlchemyWeb3 } from "@alch/alchemy-web3";
-
-// Using HTTPS
-const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/demo",
-);
-
-const nfts = await web3.alchemy.getNfts({owner: "0xC33881b8FD07d71098b440fA8A3797886D831061"})
-
-{
-    payload: {
-        guildId: 2124
-    }
-    validation
-}{
 ```
 {% endtab %}
 {% endtabs %}
