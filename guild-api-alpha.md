@@ -1,5 +1,262 @@
 # Guild API (Alpha)
 
+### Role
+
+{% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" type="number" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```json
+{
+   "imageUrl":"/guildLogos/107.svg",
+   "name":"Member",
+   "description":"",
+   "logic":"AND",
+   "requirements":[
+      {
+         "type":"ERC20",
+         "address":"0x1b6c5864375b34af3ff5bd2e5f40bc425b4a8d79",
+         "value":"1",
+         "chain":"ETHEREUM"
+      }
+   ],
+   }
+```
+{% endswagger-response %}
+
+{% swagger-response status="204: No Content" description="" %}
+**Specified Role doesn't exist with the given ID.**
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="201: Created" description="Created Role" %}
+```json
+{
+   "imageUrl":"/guildLogos/107.svg",
+   "name":"Member",
+   "description":"",
+   "logic":"AND",
+   "requirements":[
+      {
+         "type":"ERC20",
+         "address":"0x1b6c5864375b34af3ff5bd2e5f40bc425b4a8d79",
+         "value":"1",
+         "chain":"ETHEREUM"
+      }
+   ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occured" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="authentication required" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% tabs %}
+{% tab title="API" %}
+```json
+{
+   "payload":{
+      "name": string,
+      "imageUrl"?: string,
+      "description"?: string,
+      "logic": "AND" | "OR" | "NAND" | "NOR",
+      "requirements": Requirement[]
+   },
+   "validation": {
+      // Validation object
+   }
+}
+```
+{% endtab %}
+
+{% tab title="Guild SDK" %}
+
+{% endtab %}
+{% endtabs %}
+
+{% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" type="number" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occured" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="authentication required" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% tabs %}
+{% tab title="API" %}
+```json
+{
+   "payload":{
+      "name": string,
+      "imageUrl": string,
+      "description": string,
+      "logic":"AND" | "OR" | "NAND" | "NOR",
+      "requirements": Requirement[]
+   },
+   "validation": {
+      // Validation object
+   }
+}
+```
+{% endtab %}
+
+{% tab title="Guild SDK" %}
+
+{% endtab %}
+{% endtabs %}
+
+{% swagger method="delete" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Delete Role" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" type="number" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "success": boolean
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="errors occured" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="authentication required" %}
+```json
+{
+    "errors": [
+        {
+            "msg": string
+        }
+    ]
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% tabs %}
+{% tab title="API" %}
+```json
+{
+   "payload":{
+      // Empty object is necessary
+   },
+   "validation": {
+      // Validation object
+   }
+}
+```
+{% endtab %}
+
+{% tab title="Guild SDK" %}
+
+{% endtab %}
+{% endtabs %}
+
 ### Guild
 
 {% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get all the existing guilds." %}
@@ -426,262 +683,6 @@ address of the user
 {% endtab %}
 {% endtabs %}
 
-### Role
-
-{% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" type="number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```json
-{
-   "imageUrl":"/guildLogos/107.svg",
-   "name":"Member",
-   "description":"",
-   "logic":"AND",
-   "requirements":[
-      {
-         "type":"ERC20",
-         "address":"0x1b6c5864375b34af3ff5bd2e5f40bc425b4a8d79",
-         "value":"1",
-         "chain":"ETHEREUM"
-      }
-   ],
-   }
-```
-{% endswagger-response %}
-
-{% swagger-response status="204: No Content" description="" %}
-**Specified Role doesn't exist with the given ID.**
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="201: Created" description="Created Role" %}
-```json
-{
-   "imageUrl":"/guildLogos/107.svg",
-   "name":"Member",
-   "description":"",
-   "logic":"AND",
-   "requirements":[
-      {
-         "type":"ERC20",
-         "address":"0x1b6c5864375b34af3ff5bd2e5f40bc425b4a8d79",
-         "value":"1",
-         "chain":"ETHEREUM"
-      }
-   ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% tabs %}
-{% tab title="API" %}
-```json
-{
-   "payload":{
-      "name": string,
-      "imageUrl"?: string,
-      "description"?: string,
-      "logic": "AND" | "OR" | "NAND" | "NOR",
-      "requirements": Requirement[]
-   },
-   "validation": {
-      // Validation object
-   }
-}
-```
-{% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
-{% endtabs %}
-
-{% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" type="number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% tabs %}
-{% tab title="API" %}
-```json
-{
-   "payload":{
-      "name": string,
-      "imageUrl": string,
-      "description": string,
-      "logic":"AND" | "OR" | "NAND" | "NOR",
-      "requirements": Requirement[]
-   },
-   "validation": {
-      // Validation object
-   }
-}
-```
-{% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
-{% endtabs %}
-
-{% swagger method="delete" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Delete Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" type="number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "success": boolean
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% tabs %}
-{% tab title="API" %}
-```json
-{
-   "payload":{
-      // Empty object is necessary
-   },
-   "validation": {
-      // Validation object
-   }
-}
-```
-{% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
-{% endtabs %}
 
 ### User
 
