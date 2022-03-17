@@ -383,7 +383,7 @@ Learn how to create a new strategy: [https://docs.snapshot.org/strategies/create
 
 ### [JUICEBOX](https://juicebox.money/#/)
 
-Tokens created with the Juicebox protocol, still being staked.
+Tokens created with Juicebox protocol, so communities can utilize their tokens while they are still staked.
 
 ```json
 {
@@ -398,7 +398,7 @@ Tokens created with the Juicebox protocol, still being staked.
 
 ### ALLOW LIST
 
-Allow lists or as commonly referred "whitelists" enable curation based on a list of wallet addresses collected from an external source.
+Allow lists, commonly referred to as "whitelists" enable curation based on a list of wallet addresses collected from an external source.
 
 ```json
 {
@@ -410,7 +410,7 @@ Allow lists or as commonly referred "whitelists" enable curation based on a list
 
 ### FREE
 
-Guest pass for guilds.
+Guest pass for guild members without any requirements.
 
 ```json
 {
