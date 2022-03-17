@@ -1,6 +1,14 @@
+---
+description: API for managing token gated access in any applications.
+---
+
 # Guild API (Alpha)
 
-## Role
+#### Guild.xyz is the membership layer protocol for web3 communities, making community management easy and interoperable between platforms.
+
+## Roles
+
+Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
 
 {% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
 {% swagger-description %}
@@ -34,6 +42,8 @@
 **Specified Role doesn't exist with the given ID.**
 {% endswagger-response %}
 {% endswagger %}
+
+To create a new role, you need to define its requirements and set a logic between them.
 
 {% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
 {% swagger-description %}
@@ -110,6 +120,8 @@
 ```
 {% endtab %}
 {% endtabs %}
+
+You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
 
 {% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
 {% swagger-description %}
@@ -245,9 +257,13 @@
 {% endtab %}
 {% endtabs %}
 
-### Requirements
+## Requirements
 
-#### COIN
+Guild enables role creation based on standard contract types and integrated protocols.
+
+### COIN
+
+Native fungible tokens of supported blockchains.
 
 ```json
 {
@@ -259,7 +275,9 @@
 }
 ```
 
-#### ERC20 (TOKENS)
+### ERC-20
+
+Commonly referred as tokens.
 
 ```json
 {
@@ -272,7 +290,9 @@
 }
 ```
 
-#### ERC721 or ERC1155 (NFT)
+### ERC-721 or ERC-1155
+
+Commonly referred as NFTs.
 
 ```json
 {
@@ -291,7 +311,9 @@
 }
 ```
 
-#### [POAP](https://poap.xyz)
+### [POAP](https://poap.xyz)
+
+NFTs issued by the Proof of Attendance Protocol (POAP) represent special shared memories.
 
 ```json
 {
@@ -302,7 +324,9 @@
 }
 ```
 
-#### [MIRROR](https://mirror.xyz)
+### [MIRROR](https://mirror.xyz)
+
+NFTs minted on Mirror.xyz, the web3-native publishing platform.
 
 ```json
 {
@@ -315,7 +339,9 @@
 }
 ```
 
-#### [UNLOCK](https://unlock-protocol.com)
+### [UNLOCK](https://unlock-protocol.com)
+
+Membership NFTs issued by the Unlock Protocol.
 
 ```json
 {
@@ -328,7 +354,13 @@
 }
 ```
 
-#### [SNAPSHOT](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies)
+### [SNAPSHOT](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies) STRATEGIES
+
+Snapshot strategies are JavaScript functions that return a score for a set of addresses. They are being used on Guild to enable any custom condition check.
+
+Currently available strategies: [https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies)
+
+Learn how to create a new strategy: [https://docs.snapshot.org/strategies/create](https://docs.snapshot.org/strategies/create)
 
 ```json
 {
@@ -340,7 +372,9 @@
 }
 ```
 
-#### [JUICEBOX](https://juicebox.money/#/)
+### [JUICEBOX](https://juicebox.money/#/)
+
+Tokens created with the Juicebox protocol, still being staked.
 
 ```json
 {
@@ -353,7 +387,9 @@
 }
 ```
 
-#### WHITELIST
+### ALLOW LIST
+
+Allow lists or as commonly referred "whitelists" enable curation based on a list of wallet addresses collected from an external source.
 
 ```json
 {
@@ -363,7 +399,9 @@
 }
 ```
 
-#### FREE
+### FREE
+
+Guest pass for guilds.
 
 ```json
 {
@@ -371,7 +409,7 @@
 }
 ```
 
-## Guild
+## Guilds
 
 {% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get all the existing guilds." %}
 {% swagger-description %}
@@ -785,7 +823,7 @@ address of the user
 {% endtab %}
 {% endtabs %}
 
-## User
+## Users
 
 {% swagger method="get" path="/user/membership/:address" baseUrl="https://api.guild.xyz/v1" summary="Get every membership of a User." %}
 {% swagger-description %}
