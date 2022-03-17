@@ -1,6 +1,6 @@
 # Guild API (Alpha)
 
-### Role
+## Role
 
 {% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
 {% swagger-description %}
@@ -109,10 +109,6 @@
 }
 ```
 {% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
 {% endtabs %}
 
 {% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
@@ -182,10 +178,6 @@
 }
 ```
 {% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
 {% endtabs %}
 
 {% swagger method="delete" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Delete Role" %}
@@ -251,17 +243,11 @@
 }
 ```
 {% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
 {% endtabs %}
 
-# Role Requirements
+### Requirements
 
-
-
-### COIN
+#### COIN
 
 ```json
 {
@@ -273,7 +259,7 @@
 }
 ```
 
-### ERC20 (TOKENS)
+#### ERC20 (TOKENS)
 
 ```json
 {
@@ -286,7 +272,7 @@
 }
 ```
 
-### ERC721 or ERC1155 (NFT)
+#### ERC721 or ERC1155 (NFT)
 
 ```json
 {
@@ -305,7 +291,7 @@
 }
 ```
 
-### [POAP](https://poap.xyz)
+#### [POAP](https://poap.xyz)
 
 ```json
 {
@@ -316,7 +302,7 @@
 }
 ```
 
-### [MIRROR](https://mirror.xyz)
+#### [MIRROR](https://mirror.xyz)
 
 ```json
 {
@@ -329,7 +315,7 @@
 }
 ```
 
-### [UNLOCK](https://unlock-protocol.com)
+#### [UNLOCK](https://unlock-protocol.com)
 
 ```json
 {
@@ -342,7 +328,7 @@
 }
 ```
 
-### [SNAPSHOT](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies)
+#### [SNAPSHOT](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies)
 
 ```json
 {
@@ -354,7 +340,7 @@
 }
 ```
 
-### [JUICEBOX](https://juicebox.money/#/)
+#### [JUICEBOX](https://juicebox.money/#/)
 
 ```json
 {
@@ -367,7 +353,7 @@
 }
 ```
 
-### WHITELIST
+#### WHITELIST
 
 ```json
 {
@@ -377,7 +363,7 @@
 }
 ```
 
-### FREE
+#### FREE
 
 ```json
 {
@@ -385,8 +371,7 @@
 }
 ```
 
-
-### Guild
+## Guild
 
 {% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get all the existing guilds." %}
 {% swagger-description %}
@@ -671,8 +656,6 @@ address of the user
 {% endtab %}
 {% endtabs %}
 
-
-
 {% swagger method="patch" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Guild" %}
 {% swagger-description %}
 
@@ -734,12 +717,6 @@ address of the user
    }
 }
 ```
-
-
-{% endtab %}
-
-{% tab title="Guild SDK" %}
-
 {% endtab %}
 {% endtabs %}
 
@@ -806,14 +783,9 @@ address of the user
 }
 ```
 {% endtab %}
-
-{% tab title="Guild SDK" %}
-
-{% endtab %}
 {% endtabs %}
 
-
-### User
+## User
 
 {% swagger method="get" path="/user/membership/:address" baseUrl="https://api.guild.xyz/v1" summary="Get every membership of a User." %}
 {% swagger-description %}
