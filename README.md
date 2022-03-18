@@ -7,13 +7,13 @@ _Guild is going platform agnostic: 30+ platform integrations coming this year._
 
 {% tabs %}
 {% tab title="Discord" %}
-#### **Your Discord Server**
+**Your Discord Server**
 
 * **Create a new Discord server or use your already existing one:**\
   You will need Categories (Welcome/Community/Administrators) + Channels (gm/news/announcements) within these in your server. When you create your guild, you will be able to set which of your new roles get access to which of these categories or channels.\
 
-* **Adding the **_**Guild.xyz bot**_**:**\
-  ****Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's the best if you choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
+* **Adding the Guild.xyz bot:**\
+  Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's the best if you choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
 
 ![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7).png>)
 
@@ -21,34 +21,32 @@ On the Discord page that popped up after clicking on the _'Add Guild.xyz bot'_ b
 
 ![](<.gitbook/assets/image (11).png>) ![](.gitbook/assets/Untitled.png)
 
-* **Role of the **_**Guild.xyz**_** bot:**\
-  Make sure the _Guild.xyz_ bot role is above every other role it has to manage (it'll generate one for your guild once it has been created). Alternatively, you can edit its role to be able to manage channels and roles.
+* **Role of the Guild.xyz bot:**\
+  ****Make sure the _Guild.xyz_ bot role is above every other role it has to manage (it'll generate one for your guild once it has been created). Alternatively, you can edit its role to be able to manage channels and roles.
 
 ![Setting the role placement of the Guild.xyz bot](<.gitbook/assets/image (18).png>)
 
 After these, you can return to the guild page and continue creating your guild, the _Guild.xyz_ bot is now in your server.
 
-
-
 * **Setting a starting channel:**\
-  ****This is an already existing channel (welcome/gm/start-here) within your server where everyone who is joining your guild will enter first.\
-  Don't worry! After setting up your guild, you can always change the starting channel by choosing another one and inviting the _Guild.xyz_ bot there with the /join-button command. _(more info at the "Onboarding your community" section below)_
+  This is an already existing channel (welcome/gm/start-here) within your server where everyone who is joining your guild will enter first.\
+  Don't worry! After setting up your guild, you can always change the starting channel by choosing another one and inviting the _Guild.xyz_ bot there with the /join-button command. _(more info at the 'Onboarding your community' section below)_
 
 ![Choosing the starting channel for your server](<.gitbook/assets/image (3).png>)
 
 * **Managing roles:**\
-  ****Guild creates your roles and makes sure about that only those who qualify can get access to it. What that role sees and does is fully up to you and your Discord settings. After your users gain access to a role within your Discord, you have the ability to manage what that role can do and see in all of your servers.\
+  Guild creates your roles and makes sure about that only those who qualify can get access to it. What that role sees and does is fully up to you and your Discord settings. After your users gain access to a role within your Discord, you have the ability to manage what that role can do and see in all of your servers.\
   A useful tip is that you can manage roles by category as well, not just by channel. This can speed up your admin tasks :) Here's a link to [Discord's Role Management 101](https://support.discord.com/hc/en-us/articles/214836687-Role-Management-101)
 {% endtab %}
 
 {% tab title="Telegram" %}
-#### Your Telegram
+**Your Telegram**
 
 * **Create a new Telegram group or use your existing one:**\
-  ****The Guild bot will manage the access control of the group, like a bouncer at a club's entrance.\
+  The Guild bot will manage the access control of the group, like a bouncer at a club's entrance.\
 
-* **Adding the **_**Guild bot**_**:**\
-  ****On the [Create Guild](https://guild.xyz/create-guild) page choose Telegram as a Realm
+* **Adding the Guild bot:**\
+  On the [Create Guild](https://guild.xyz/create-guild) page choose Telegram as a Realm
 
 ![Adding the Guild bot to your TG group](<.gitbook/assets/Screenshot 2022-03-16 at 15.23.00.png>)
 
@@ -60,8 +58,8 @@ The video shows you how to convert your group into a Supergroup. These are only 
 1. Click on the _'Info'_ and then the _'Edit'_ button
 2. Choose _'Chat history for new members'_
 3. Change the setting from _'Hidden'_ to _'Visible'_
-4. &#x20;_'Done'_\
-
+4. _'Done'_\
+   __
 
 When you are done you'll get the next message + a video:\
 ![](<.gitbook/assets/image (6).png>)
@@ -72,7 +70,7 @@ This message contains a video, showing you the steps how to add the bot as an ad
 2. Select _'Administrators'_
 3. _'Add admin'_ and choose the _'Guild bot'_
 4. _'Done'_\
-   __
+
 
 After that you will get the following instructions:
 
@@ -90,26 +88,24 @@ Good to know:
 {% endtab %}
 {% endtabs %}
 
-
-
 ## **Making your first guild**
 
 **Step 1:** On the [guild.xyz](https://guild.xyz) homepage go to the _'Create guild'_ button.
 
 **Step 2: Customisation**\
-****Give a name to your first guild, choose an icon or upload a picture for it. This will be the name for your whole guild as well, no matter how many roles you have in it later on. It will also be the name of your first role within the guild. Here you can add a short description for your guild, to let your members know what they are getting themselves into :) You can edit these names, descriptions and images later.
+Give a name to your first guild, choose an icon or upload a picture for it. This will be the name for your whole guild as well, no matter how many roles you have in it later on. It will also be the name of your first role within the guild. Here you can add a short description for your guild, to let your members know what they are getting themselves into :) You can edit these names, descriptions and images later.
 
 ![Customising your guild](https://rogue-face-c95.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F630a6f29-dfb2-41f4-b5ab-1d26c5e47e4b%2FScreenshot\_2021-12-12\_at\_12.04.58.png?table=block\&id=db68820d-9529-4e59-a924-2cd515e21a06\&spaceId=8e53beee-9b6f-4a72-8b3e-faa3a38b3f7d\&width=1340\&userId=\&cache=v2)
 
 **Step 3: Choosing a requirement logic**\
-****For now, you can only use one type of logic per role.
+For now, you can only use one type of logic per role:
 
 * AND: This logic allows you to stack requirements with ‘AND’ logic, so users have to own ALL the listed requirements to gain access to that role. You can stack as many as you want to make the access to that role even more exclusive.
 * OR: This logic allows you to stack requirements with ‘OR’ logic, so users have to own ONE of the listed requirements to gain access to that role. You can also stack as many requirements as you wish to make the access to that role more inclusive or widespread.
-* Later on a combination of these logics (eg.: token ‘AND’ NFT ‘OR’ other NFT)  will be available.
+* Later on a combination of these logics (eg.: token ‘AND’ NFT ‘OR’ other NFT) will be available.
 
 **Step 4: Setting requirements**\
-****You can combine assets across multiple blockchains (Ethereum, Polygon, Avalanche, Arbitrum, Celo, Fantom, Harmony, xDai or BSC, more on the way...) _**and**_ of multiple types (ERC-20, ERC-721 with specific traits, ERC-1155, whitelists of addresses, POAPs, having completed a Snapshot strategy, Mirror edition NFTs, Juicebox project assets even staked ones, Unlock protocol tokens)
+You can combine assets across multiple blockchains (Ethereum, Polygon, Avalanche, Arbitrum, Celo, Fantom, Harmony, xDai or BSC, more on the way...) _**and**_ of multiple types (ERC-20, ERC-721 with specific traits, ERC-1155, whitelists of addresses, POAPs, having completed a Snapshot strategy, Mirror edition NFTs, Juicebox project assets even staked ones, Unlock protocol tokens)
 
 Guild is listening to events on the blockchain all the time and revokes roles from users who sell the token/NFT required for participation.
 
@@ -129,7 +125,7 @@ Hit _'Summon',_ and here you will have to sign a message with your wallet. This,
 
 ## **Making more roles in your guild**
 
-(only for Discord)\
+(Note: this setting is available only for Discord)\
 This process is even simpler than creating your first one because you already have the _Guild.xyz bot_ in your server. Creating more roles in your guild will allow you to have membership levels, layers or even subDAOs within your community.
 
 1. Go to your guild page, click the '_edit'_ button on the right-hand side of your screen and choose _add role_.
@@ -140,26 +136,25 @@ This process is even simpler than creating your first one because you already ha
 
 ## Syncing your channel categories on Discord
 
-Having different roles, layers in your community is a perfect opportunity for guild admins/community managers to build up a refined server and manage which channels the different roles have access to. Just like channels have permissions, so do categories. To make your life easier, all you have to do is syncing your channel categories so then every channel within 1 category will have the same permission setup.
+Having different roles, layers in your community is a perfect opportunity for guild admins/community managers to build up a refined server and manage which channels the different roles have access to. Just like channels have permissions, so do categories. To make your life easier, all you have to do is syncing your channel categories so then every channel within one category will have the same permission setup.
 
 Here's a short guide on how you can do it (so you don't have to go channel by channel):
 
 1. **Arrange your categories and channels**\
-   ****Do it however you want regarding to your plans with the roles' permissions. Mind you, when you move channels between categories, you'll be asked if you want to sync the permissions and the answer is Yes. This means that Discord will automatically update the permissions on a channel to match those of the category upon a move.\
+   Do it however you want regarding to your plans with the roles' permissions. Mind you, when you move channels between categories, you'll be asked if you want to sync the permissions and the answer is Yes. This means that Discord will automatically update the permissions on a channel to match those of the category upon a move.\
    ![](<.gitbook/assets/image (10).png>)\
 
 2.  **Manage the permissions**\
-    ****There are now two default states for a channel; **synced** and **not-synced**. A synced channel will have permissions that completely match that of the category.&#x20;
-
-    If you want the change the category permissions: right-click the category and click on the 'edit category'.\
+    There are now two default states for a channel: **synced** and **not-synced**.\
+    A synced channel will have permissions that completely match that of the category. If you want the change the category permissions: right-click the category and click on the 'edit category'.\
     ![](<.gitbook/assets/image (5).png>)\
     \
-    Click on the 'Permissions' tab to alter permissions and add roles.\
+    Click on the _'Permissions'_ tab to alter permissions and add roles.\
     ![](<.gitbook/assets/image (13).png>)
 
     \
     **Good to know:**\
-    ****1. If you change the permissions on a category, all channels that are synced will automatically update.\
+    1\. If you change the permissions on a category, all channels that are synced will automatically update.\
     2\. If you do not sync permissions when moving a channel between categories, or if you change an individual permission on the channel level, it will then show that the channel is not synced with the category.
 
     ![](<.gitbook/assets/image (19).png>)\
@@ -183,20 +178,18 @@ Getting your community in your roles has multiple options, you can use the one t
 
 These are the problems communities ran into the most & here's a step by step guide to help:
 
-1.  **Some people don’t get the role while others do:**\
-    ****Sometimes these addresses have multisign on them which might cause issues. To solve the problem:
+1. **Some people don’t get the role while others do:**\
+   Sometimes these addresses have multisign on them which might cause issues. To solve the problem:
+   * Try to use a different device to enter. Using a PC solves this issue sometimes.
+   * Make sure the _Guild.xyz bot_ is above the other roles, is an Administrator or has permission to manage channels and roles
+   * Ask for the users address who has the issue and check if they actually hold the right assets that would qualify for entry
+   * If none of these worked, ping us\
 
-    * Try to use a different device to enter. Using a PC solves this issue sometimes.
-    * Make sure the _Guild.xyz bot_ is above the other roles, is an Administrator or has permission to manage channels and roles
-    * Ask for the users address who has the issue and check if they actually hold the right assets that would qualify for entry
-    * If none of these worked, ping us
-
-
-2. &#x20;**Deleting a role:**\
+2. **Deleting a role:**\
    If you want to delete a role, delete it on the guild page, not in Discord, the _Guild.xyz bot_ will do that for you.\
 
 3. **Deleting a guild:**\
-   ****The person who created the guild can delete a guild on said guild's page.\
+   The person who created the guild can delete a guild on said guild's page.\
    Click on the '_edit guild'_ button, and you will find a '_delete guild'_ button at the bottom of that page. This will delete the role in the Discord server as well, so you don't have to delete that in your server.
 
 ## Official links
@@ -208,4 +201,3 @@ Join our [Discord](https://discord.com/invite/guildxyz) server
 Check out the Guild [Roadmap](https://roadmap.guild.xyz/?\_\_force)
 
 Click on our [GitHub](https://github.com/agoraxyz/guild.xyz) to see what's shipping behind the scenes
-
