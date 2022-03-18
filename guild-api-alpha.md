@@ -24,8 +24,8 @@ Besides integrating Guild into new platforms, this API is also useful for commun
 A few examples where this could be useful:
 
 1. An NFT issuer platform can create new roles for every new collections.
-2. Extend an allow list automatically
-3. Users can invite others by adding their address to an allow list
+2. Extend an allow list automatically.
+3. Users can invite others by adding their address to an allow list.
 
 {% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
 {% swagger-description %}
@@ -432,32 +432,7 @@ Guest pass for guild members without any requirements.
 
 _"Although there is no one single definition for what a web3 guild is, they’re generally considered to be a collective of crypto-enabled developers, designers, and thinkers that share resources (be it knowledge or labour) in the pursuit of a common goal." (_[_Web3 Guilds_](https://medium.com/superfluid-blog/web3-guilds-the-rebirth-of-organized-work-e9c1a139ad29)_)_
 
-**Create a new community by creating a guild.**
-
-{% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get All Guilds" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-response status="200: OK" description="array of guilds" %}
-```json
-[
-    {
-        "id": number,
-        "name": string,
-        "roles": string[], // names of the roles
-        "imageUrl": string,
-        "urlName": string,
-        "memberCount": number
-    }
-]
-```
-{% endswagger-response %}
-
-{% swagger-response status="204: No Content" description="empty response, not found" %}
-**No Guild added.**
-{% endswagger-response %}
-{% endswagger %}
+Create a new community by creating a guild.
 
 {% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
 {% swagger-description %}
@@ -536,6 +511,31 @@ _"Although there is no one single definition for what a web3 guild is, they’re
 ```
 {% endtab %}
 {% endtabs %}
+
+{% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get All Guilds" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="array of guilds" %}
+```json
+[
+    {
+        "id": number,
+        "name": string,
+        "roles": string[], // names of the roles
+        "imageUrl": string,
+        "urlName": string,
+        "memberCount": number
+    }
+]
+```
+{% endswagger-response %}
+
+{% swagger-response status="204: No Content" description="empty response, not found" %}
+**No Guild added.**
+{% endswagger-response %}
+{% endswagger %}
 
 {% swagger method="get" path="/guild/access/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Check User Access to a Guild" %}
 {% swagger-description %}
