@@ -140,7 +140,7 @@ To create a new role, you need to define its requirements and the logic type of 
 
 You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
 
-T
+Updating roles programatically is a powerful way to manage communities with dynamic membership requirements or keep requirements up-to-date automatically.
 
 {% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
 {% swagger-description %}
