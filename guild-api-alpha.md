@@ -1,5 +1,5 @@
 ---
-description: API for managing token gated access in any applications.
+description: API for automating token gated access in any applications.
 ---
 
 # Guild API (Alpha)
@@ -10,7 +10,7 @@ description: API for managing token gated access in any applications.
 
 Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
 
-Certain roles can represent a membership type or grant temporary or permanent access to any access or content in your application.
+Certain roles can represent a membership type, grant temporary or permanent access to content in your application.
 
 Common use-cases include:
 
@@ -18,6 +18,14 @@ Common use-cases include:
 2. Membership access to articles or newsletter.
 3. Ticket to a virtual event.
 4. Special privileges in a social application.
+
+Besides integrating Guild into new platforms, this API is also useful for communities that need more control over their membership layers. You can automate new role creation, manage hundreds of roles and update roles on the fly.
+
+A few examples where this could be useful:
+
+1. An NFT issuer platform can create new roles for every new collections.
+2. Extend an allow list automatically
+3. Users can invite others by adding their address to an allow list
 
 {% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
 {% swagger-description %}
@@ -131,6 +139,8 @@ To create a new role, you need to define its requirements and the logic type of 
 {% endtabs %}
 
 You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
+
+T
 
 {% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
 {% swagger-description %}
