@@ -406,7 +406,7 @@ Tokens created with Juicebox protocol, so communities can utilize their tokens w
 }
 ```
 
-### ALLOW LIST
+### ALLOWLIST
 
 Allow lists, commonly referred to as "whitelists" enable curation based on a list of wallet addresses collected from an external source.
 
