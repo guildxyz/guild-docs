@@ -8,25 +8,6 @@ description: API for automating token gated access in any applications.
 
 ## Roles
 
-Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
-
-Certain roles can represent a membership type, grant temporary or permanent access to content in your application.
-
-Common use-cases include:
-
-1. &#x20;Permissions management for work collaboration.
-2. Membership access to articles or newsletter.
-3. Ticket to a virtual event.
-4. Special privileges in a social application.
-
-Besides integrating Guild into new platforms, this API is also useful for communities that need more control over their membership layers. You can automate new role creation, manage hundreds of roles and update roles on the fly.
-
-A few examples where this could be useful:
-
-1. An NFT issuer platform can create new roles for every new collections.
-2. Extend an allow list automatically.
-3. Users can invite others by adding their address to an allow list.
-
 {% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
 {% swagger-description %}
 
@@ -60,7 +41,24 @@ A few examples where this could be useful:
 {% endswagger-response %}
 {% endswagger %}
 
-To create a new role, you need to define its requirements and the logic type of stacking these requirements.
+Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
+
+Certain roles can represent a membership type, grant temporary or permanent access to content in your application.
+
+Common use-cases include:
+
+1. &#x20;Permissions management for work collaboration.
+2. Membership access to articles or newsletter.
+3. Ticket to a virtual event.
+4. Special privileges in a social application.
+
+Besides integrating Guild into new platforms, this API is also useful for communities that need more control over their membership layers. You can automate new role creation, manage hundreds of roles and update roles on the fly.
+
+A few examples where this could be useful:
+
+1. An NFT issuer platform can create new roles for every new collections.
+2. Extend an allow list automatically.
+3. Users can invite others by adding their address to an allow list.
 
 {% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
 {% swagger-description %}
@@ -119,6 +117,8 @@ To create a new role, you need to define its requirements and the logic type of 
 {% endswagger-response %}
 {% endswagger %}
 
+To create a new role, you need to define its requirements and the logic type of stacking these requirements.
+
 {% tabs %}
 {% tab title="API" %}
 ```json
@@ -137,10 +137,6 @@ To create a new role, you need to define its requirements and the logic type of 
 ```
 {% endtab %}
 {% endtabs %}
-
-You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
-
-Updating roles programatically is a powerful way to manage communities with dynamic membership requirements or keep requirements up-to-date automatically.
 
 {% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
 {% swagger-description %}
@@ -191,6 +187,10 @@ Updating roles programatically is a powerful way to manage communities with dyna
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
+
+Updating roles programatically is a powerful way to manage communities with dynamic membership requirements or keep requirements up-to-date automatically.
 
 {% tabs %}
 {% tab title="API" %}
@@ -412,9 +412,9 @@ Allow lists, commonly referred to as "whitelists" enable curation based on a lis
 
 ```json
 {
-    "type": "WHITELIST",
+    "type": "ALLOWLIST",
     "data": {
-        "addresses": string[] // the whitelisted user addresses
+        "addresses": string[] // the allowed user addresses
 }
 ```
 
@@ -431,8 +431,6 @@ Guest pass for guild members without any requirements.
 ## Guilds
 
 _"Although there is no one single definition for what a web3 guild is, they’re generally considered to be a collective of crypto-enabled developers, designers, and thinkers that share resources (be it knowledge or labour) in the pursuit of a common goal." (_[_Web3 Guilds_](https://medium.com/superfluid-blog/web3-guilds-the-rebirth-of-organized-work-e9c1a139ad29)_)_
-
-Create a new community by creating a guild.
 
 {% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
 {% swagger-description %}
@@ -485,6 +483,8 @@ Create a new community by creating a guild.
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+Create a new community by creating a guild.
 
 {% tabs %}
 {% tab title="API" %}
