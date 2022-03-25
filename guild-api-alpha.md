@@ -278,7 +278,7 @@ Updating roles programatically is a powerful way to manage communities with dyna
 
 ## Requirements
 
-Guild enables role creation based on standard contract types and integrated protocols.
+Guild enables requirement creation based on standard contract types and integrated protocols.
 
 ### COIN
 
