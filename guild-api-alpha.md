@@ -8,7 +8,7 @@ description: API for automating token gated access in any applications.
 
 ## Guilds
 
-_"Although there is no one single definition for what a web3 guild is, they’re generally considered to be a collective of crypto-enabled developers, designers, and thinkers that share resources (be it knowledge or labour) in the pursuit of a common goal." (_[_Web3 Guilds_](https://medium.com/superfluid-blog/web3-guilds-the-rebirth-of-organized-work-e9c1a139ad29)_)_
+__
 
 {% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
 {% swagger-description %}
@@ -189,7 +189,7 @@ address of the user
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User's Membership Status in a Guild" %}
+{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -557,40 +557,7 @@ Guild ID could be a number or an urlName of a guild.
 }
 ```
 
-## Roles
-
-{% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" type="number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```json
-{
-   "imageUrl":"/guildLogos/107.svg",
-   "name":"Member",
-   "description":"",
-   "logic":"AND",
-   "requirements":[
-      {
-         "type":"ERC20",
-         "address":"0x1b6c5864375b34af3ff5bd2e5f40bc425b4a8d79",
-         "alue":"1",
-         "chain":"ETHEREUM"
-      }
-   ],
-   }
-```
-{% endswagger-response %}
-
-{% swagger-response status="204: No Content" description="" %}
-**Specified Role doesn't exist with the given ID.**
-{% endswagger-response %}
-{% endswagger %}
+### Roles
 
 Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
 
@@ -598,7 +565,7 @@ Each role can represent a membership type, grant temporary or permanent access t
 
 Common use-cases include:
 
-1. &#x20;Permission management for work collaboration.
+1. Permission management for work collaboration.
 2. Membership access to articles or newsletter.
 3. Ticket to a virtual event.
 4. Special privileges in a social application.
@@ -610,63 +577,6 @@ A few examples where this could be useful:
 1. An NFT issuer platform can create new roles for every new collection.
 2. Extend an allow list automatically.
 3. Users can invite others by adding their address to an allow list.
-
-{% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="201: Created" description="Created Role" %}
-```json
-{
-   "imageUrl":"/guildLogos/107.svg",
-   "name":"Member",
-   "description":"",
-   "logic":"AND",
-   "requirements":[
-      {
-         "type":"ERC20",
-         "address":"0x1b6c5864375b34af3ff5bd2e5f40bc425b4a8d79",
-         "value":"1",
-         "chain":"ETHEREUM"
-      }
-   ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
 
 To create a new role, you need to define its requirements and the logic type of stacking these requirements.
 
@@ -688,56 +598,6 @@ To create a new role, you need to define its requirements and the logic type of 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" type="number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
 
 You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
 
@@ -762,56 +622,6 @@ Updating roles programatically is a powerful way to manage communities with dyna
 {% endtab %}
 {% endtabs %}
 
-{% swagger method="delete" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Delete Role" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="path" type="number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "success": boolean
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="errors occured" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
-```json
-{
-    "errors": [
-        {
-            "msg": string
-        }
-    ]
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
 {% tabs %}
 {% tab title="API" %}
 ```json
@@ -827,11 +637,11 @@ Updating roles programatically is a powerful way to manage communities with dyna
 {% endtab %}
 {% endtabs %}
 
-## Requirements
+### Requirements
 
 Guild enables requirement creation based on standard contract types and integrated protocols.
 
-### COIN
+#### COIN
 
 Native fungible tokens of supported blockchains.
 
@@ -845,7 +655,7 @@ Native fungible tokens of supported blockchains.
 }
 ```
 
-### ERC-20
+#### ERC-20
 
 Commonly referred to as tokens.
 
@@ -860,7 +670,7 @@ Commonly referred to as tokens.
 }
 ```
 
-### ERC-721 or ERC-1155
+#### ERC-721 or ERC-1155
 
 Commonly referred to as NFTs.
 
@@ -881,7 +691,7 @@ Commonly referred to as NFTs.
 }
 ```
 
-### [POAP](https://poap.xyz)
+#### [POAP](https://poap.xyz)
 
 NFTs issued by the Proof of Attendance Protocol (POAP) represent special shared memories.
 
@@ -894,7 +704,7 @@ NFTs issued by the Proof of Attendance Protocol (POAP) represent special shared 
 }
 ```
 
-### [MIRROR](https://mirror.xyz)
+#### [MIRROR](https://mirror.xyz)
 
 NFTs minted on Mirror.xyz, the web3-native publishing platform.
 
@@ -909,7 +719,7 @@ NFTs minted on Mirror.xyz, the web3-native publishing platform.
 }
 ```
 
-### [UNLOCK](https://unlock-protocol.com)
+#### [UNLOCK](https://unlock-protocol.com)
 
 Membership NFTs issued by the Unlock Protocol.
 
@@ -924,7 +734,7 @@ Membership NFTs issued by the Unlock Protocol.
 }
 ```
 
-### [SNAPSHOT](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies) STRATEGIES
+#### [SNAPSHOT](https://github.com/snapshot-labs/snapshot-strategies/tree/master/src/strategies) STRATEGIES
 
 Snapshot strategies are JavaScript functions that return a score for a set of addresses. They are being used on Guild to enable any custom condition check.
 
@@ -942,7 +752,7 @@ Learn how to create a new strategy: [https://docs.snapshot.org/strategies/create
 }
 ```
 
-### [JUICEBOX](https://juicebox.money/#/)
+#### [JUICEBOX](https://juicebox.money/#/)
 
 Tokens created with Juicebox protocol, so communities can utilize their tokens while they are still staked.
 
@@ -957,7 +767,7 @@ Tokens created with Juicebox protocol, so communities can utilize their tokens w
 }
 ```
 
-### ALLOWLIST
+#### ALLOWLIST
 
 Allow lists, commonly referred to as "whitelists" enable curation based on a list of wallet addresses collected from an external source.
 
@@ -969,7 +779,7 @@ Allow lists, commonly referred to as "whitelists" enable curation based on a lis
 }
 ```
 
-### FREE
+#### FREE
 
 Guest pass for guild members without any requirements.
 
@@ -978,6 +788,5 @@ Guest pass for guild members without any requirements.
     "type": "FREE"
 }
 ```
-
 {% endtab %}
 {% endtabs %}
