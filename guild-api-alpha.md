@@ -85,7 +85,56 @@ Create a new community by creating a guild.
 
 {% tab title="Guild SDK" %}
 ```typescript
-// Code snippet
+import { guild } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+await guild.create(
+  {
+    name: "My New Guild",
+    description: "Cool stuff",                                                      // Optional
+    imageUrl: "",                                                                   // Optional
+    theme: [{ mode: "DARK", color: "#000000" }],                                    // Optional
+    roles: [
+      {
+        name: "My First Role",
+        logic: "AND",
+        requirements: [
+          {
+            type: "ALLOWLIST",
+            data: {
+              addresses: [
+                "0xedd9C1954c77beDD8A2a524981e1ea08C7E484Be",
+                "0x1b64230Ad5092A4ABeecE1a50Dc7e9e0F0280304",
+              ],
+            },
+          },
+        ],
+      },
+      {
+        name: "My Second Role",
+        logic: "OR",
+        requirements: [
+          {
+            type: "ERC20",
+            chain: "ETHEREUM",
+            address: "0xf76d80200226ac250665139b9e435617e4ba55f9",
+            data: { 
+              amount: 1 
+          },
+          },
+          {
+            type: "ERC721",
+            chain: "ETHEREUM",
+            address: "0x734AA2dac868218D2A5F9757f16f6f881265441C",
+            data: {
+              amount: 1
+            },
+          },
+        ],
+      },
+    ],
+  },
+  ethers.Wallet.createRandom() // You have to insert your own wallet here
+);// Code snippet
 ```
 {% endtab %}
 {% endtabs %}
