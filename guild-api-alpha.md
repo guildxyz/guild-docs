@@ -65,24 +65,6 @@ description: API for automating token gated access in any applications.
 Create a new community by creating a guild.
 
 {% tabs %}
-{% tab title="API" %}
-```json
-{
-   "payload":{
-      "name": string,
-      "imageUrl"?: string,
-      "description"?: string,
-      "roles": Role[],
-      "theme"?: Theme[],
-      "showMembers"?: boolean
-   },
-   "validation": {
-      // Validation object
-   }
-}
-```
-{% endtab %}
-
 {% tab title="Guild SDK" %}
 ```typescript
 import { guild } from "@guildxyz/sdk";
@@ -133,8 +115,26 @@ await guild.create(
       },
     ],
   },
-  ethers.Wallet.createRandom() // You have to insert your own wallet here
+  ethers.Wallet.createRandom() // The Guild owner's wallet
 );// Code snippet
+```
+{% endtab %}
+
+{% tab title="API" %}
+```json
+{
+   "payload":{
+      "name": string,
+      "imageUrl"?: string,
+      "description"?: string,
+      "roles": Role[],
+      "theme"?: Theme[],
+      "showMembers"?: boolean
+   },
+   "validation": {
+      // Validation object
+   }
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -378,6 +378,17 @@ address of the user
 {% endswagger %}
 
 {% tabs %}
+{% tab title="Guild SDK" %}
+```typescript
+import { user } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+
+await user.join(
+    guildId,                        // Insert Guild ID here
+    ethers.Wallet.createRandom());  // Your/User wallet
+```
+{% endtab %}
+
 {% tab title="API" %}
 ```json
 {
@@ -388,30 +399,6 @@ address of the user
       // Validation object
       }
 }
-```
-{% endtab %}
-
-{% tab title="Guild SDK" %}
-```typescript
-???
-
-// Installation: https://github.com/alchemyplatform/alchemy-web3
-
-import { createAlchemyWeb3 } from "@alch/alchemy-web3";
-
-// Using HTTPS
-const web3 = createAlchemyWeb3(
-  "https://eth-mainnet.alchemyapi.io/v2/demo",
-);
-
-const nfts = await web3.alchemy.getNfts({owner: "0xC33881b8FD07d71098b440fA8A3797886D831061"})
-
-{
-    payload: {
-        guildId: 2124
-    }
-    validation
-}{
 ```
 {% endtab %}
 {% endtabs %}
@@ -524,6 +511,18 @@ Guild ID could be a number or an urlName of a guild.
 {% endswagger %}
 
 {% tabs %}
+{% tab title="Guild SDK" %}
+```typescript
+import { guild } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+
+await guild.update(
+    guildId,                         // Insert Guild ID here
+    {description: "My new Description"}, 
+    ethers.Wallet.createRandom());  // The Guild owner's wallet
+```
+{% endtab %}
+
 {% tab title="API" %}
 ```json
 {
@@ -594,6 +593,17 @@ Guild ID could be a number or an urlName of a guild.
 {% endswagger %}
 
 {% tabs %}
+{% tab title="Guild SDK" %}
+```typescript
+import { guild } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+
+await guild.delete(
+    guildId,                        // Insert Guild ID here
+    ethers.Wallet.createRandom());  // The Guild owner's wallet
+```
+{% endtab %}
+
 {% tab title="API" %}
 ```json
 {
@@ -722,6 +732,31 @@ A few examples where this could be useful:
 To create a new role, you need to define its requirements and the logic type of stacking these requirements.
 
 {% tabs %}
+{% tab title="Guild SDK" %}
+```typescript
+import { role } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+
+await role.create({
+        guildId: 1,                // Insert Guild ID here
+        name: "My Third Role",
+        logic: "AND",
+        requirements: [
+          {
+            type: "ALLOWLIST",
+            data: {
+              addresses: [
+                "0xedd9C1954c77beDD8A2a524981e1ea08C7E484Be",
+              ],
+            },
+          },
+        ],
+      },
+     ethers.Wallet.createRandom());  // The Guild owner's wallet
+
+```
+{% endtab %}
+
 {% tab title="API" %}
 ```json
 {
@@ -795,6 +830,18 @@ You can update roles anytime, but be aware that existing members might loose acc
 Updating roles programatically is a powerful way to manage communities with dynamic membership requirements or keep requirements up-to-date automatically.
 
 {% tabs %}
+{% tab title="Guild SDK" %}
+```typescript
+import { role } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+
+await role.update(
+        roleId,                         // Insert Role ID here
+        {name: "New Role Name"},
+        ethers.Wallet.createRandom());  // The Guild owner's wallet
+```
+{% endtab %}
+
 {% tab title="API" %}
 ```json
 {
@@ -864,6 +911,17 @@ Updating roles programatically is a powerful way to manage communities with dyna
 {% endswagger %}
 
 {% tabs %}
+{% tab title="Guild SDK" %}
+```typescript
+import { role } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+
+await role.delete(
+        roleId,                          // Insert Role ID here
+        ethers.Wallet.createRandom());  // The Guild owner's wallet
+```
+{% endtab %}
+
 {% tab title="API" %}
 ```json
 {
