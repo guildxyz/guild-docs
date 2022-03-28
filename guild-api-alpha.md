@@ -6,6 +6,8 @@ description: API for automating token gated access in any applications.
 
 #### Guild.xyz is the membership layer protocol for web3 communities, making community management easy and interoperable between platforms.
 
+**Check out our SDK here:**  [**https://www.npmjs.com/package/@guildxyz/sdk**](https://www.npmjs.com/package/@guildxyz/sdk) **.**
+
 ## Guilds
 
 {% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
