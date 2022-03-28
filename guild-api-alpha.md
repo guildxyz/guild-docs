@@ -556,6 +556,7 @@ Guild ID could be a number or an urlName of a guild.
    }
 }
 ```
+{% endtab %} {% endtabs %}
 
 ## Roles
 
