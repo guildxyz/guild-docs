@@ -8,8 +8,6 @@ description: API for automating token gated access in any applications.
 
 ## Guilds
 
-_"Although there is no one single definition for what a web3 guild is, they’re generally considered to be a collective of crypto-enabled developers, designers, and thinkers that share resources (be it knowledge or labour) in the pursuit of a common goal." (_[_Web3 Guilds_](https://medium.com/superfluid-blog/web3-guilds-the-rebirth-of-organized-work-e9c1a139ad29)_)_
-
 {% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
 {% swagger-description %}
 
@@ -85,7 +83,56 @@ Create a new community by creating a guild.
 
 {% tab title="Guild SDK" %}
 ```typescript
-// Code snippet
+import { guild } from "@guildxyz/sdk";
+import { ethers } from "ethers";
+await guild.create(
+  {
+    name: "My New Guild",
+    description: "Cool stuff",                                                      // Optional
+    imageUrl: "",                                                                   // Optional
+    theme: [{ mode: "DARK", color: "#000000" }],                                    // Optional
+    roles: [
+      {
+        name: "My First Role",
+        logic: "AND",
+        requirements: [
+          {
+            type: "ALLOWLIST",
+            data: {
+              addresses: [
+                "0xedd9C1954c77beDD8A2a524981e1ea08C7E484Be",
+                "0x1b64230Ad5092A4ABeecE1a50Dc7e9e0F0280304",
+              ],
+            },
+          },
+        ],
+      },
+      {
+        name: "My Second Role",
+        logic: "OR",
+        requirements: [
+          {
+            type: "ERC20",
+            chain: "ETHEREUM",
+            address: "0xf76d80200226ac250665139b9e435617e4ba55f9",
+            data: { 
+              amount: 1 
+          },
+          },
+          {
+            type: "ERC721",
+            chain: "ETHEREUM",
+            address: "0x734AA2dac868218D2A5F9757f16f6f881265441C",
+            data: {
+              amount: 1
+            },
+          },
+        ],
+      },
+    ],
+  },
+  ethers.Wallet.createRandom() // You have to insert your own wallet here
+);// Code snippet
 ```
 {% endtab %}
 {% endtabs %}
@@ -189,7 +236,7 @@ address of the user
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User's Membership Status in a Guild" %}
+{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -556,7 +603,8 @@ Guild ID could be a number or an urlName of a guild.
    }
 }
 ```
-{% endtab %} {% endtabs %}
+{% endtab %}
+{% endtabs %}
 
 ## Roles
 
@@ -599,7 +647,7 @@ Each role can represent a membership type, grant temporary or permanent access t
 
 Common use-cases include:
 
-1. &#x20;Permission management for work collaboration.
+1. Permission management for work collaboration.
 2. Membership access to articles or newsletter.
 3. Ticket to a virtual event.
 4. Special privileges in a social application.
@@ -979,6 +1027,3 @@ Guest pass for guild members without any requirements.
     "type": "FREE"
 }
 ```
-
-{% endtab %}
-{% endtabs %}
