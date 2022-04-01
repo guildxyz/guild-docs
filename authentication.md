@@ -4,13 +4,9 @@
 
 ![Authentication workflow](.gitbook/assets/Authflow.png)
 
-
-
 {% hint style="info" %}
-Skip the explanation and use our authentication module: [github.com/agoraxyz/guildauth](https://github.com/agoraxyz/guildauth)
+Skip the explanation and use our authentication module: [github.com/agoraxyz/guild-sdk](https://github.com/agoraxyz/guild-sdk)
 {% endhint %}
-
-
 
 Authenticated request creation step-by-step:
 
@@ -32,8 +28,6 @@ if (payload !== undefined) {
 Hash is optional, if the request HTTP body is empty, hashing isn't required
 {% endhint %}
 
-
-
 2\. Create a random string (called random), minimum 16 maximum 128 character long
 
 ```javascript
@@ -41,8 +35,6 @@ import { randomBytes } from "crypto"
 
 const random = randomBytes(32).toString("base64");
 ```
-
-
 
 3\. Create a nonce (called nonce) with the wallet address and the random string
 
@@ -58,9 +50,7 @@ const nonce = ethers.utils.keccak256(
 The public wallet address **must be** converted to lowercase!
 {% endhint %}
 
-
-
-4\. Recreate the signing message with this template:&#x20;
+4\. Recreate the signing message with this template:
 
 With body:
 
@@ -90,8 +80,6 @@ const signedMessage = await wallet.signMessage(
     }Timestamp: ${timestamp}`
 );
 ```
-
-
 
 5\. Assemble the request
 
@@ -252,5 +240,4 @@ async function main() {
 }
 
 main();
-
 ```
