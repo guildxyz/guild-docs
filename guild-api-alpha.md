@@ -67,14 +67,26 @@ Create a new community by creating a guild.
 {% tabs %}
 {% tab title="Guild SDK" %}
 ```typescript
-import { guild } from "@guildxyz/sdk";
+import { guild, user } from "@guildxyz/sdk";
 import { ethers } from "ethers";
-await guild.create(
+
+
+
+// Creating a random wallet for the example
+const wallet = ethers.Wallet.createRandom();
+// Wrapping the signer function from ethers.js
+const sign = (signableMessage: string | Bytes) =>
+  ethersWallet.signMessage(signableMessage);
+
+// Creating a Guild
+const myGuild = await guild.create(
+  wallet.address, // You have to insert your own wallet here
+  sign,
   {
     name: "My New Guild",
-    description: "Cool stuff",                                                      // Optional
-    imageUrl: "",                                                                   // Optional
-    theme: [{ mode: "DARK", color: "#000000" }],                                    // Optional
+    description: "Cool stuff", // Optional
+    imageUrl: "", // Optional
+    theme: [{ mode: "DARK", color: "#000000" }], // Optional
     roles: [
       {
         name: "My First Role",
@@ -99,24 +111,23 @@ await guild.create(
             type: "ERC20",
             chain: "ETHEREUM",
             address: "0xf76d80200226ac250665139b9e435617e4ba55f9",
-            data: { 
-              amount: 1 
-          },
+            data: {
+              amount: 1,
+            },
           },
           {
             type: "ERC721",
             chain: "ETHEREUM",
             address: "0x734AA2dac868218D2A5F9757f16f6f881265441C",
             data: {
-              amount: 1
+              amount: 1,
             },
           },
         ],
       },
     ],
-  },
-  ethers.Wallet.createRandom() // The Guild owner's wallet
-);// Code snippet
+  }
+);
 ```
 {% endtab %}
 
@@ -383,9 +394,11 @@ address of the user
 import { user } from "@guildxyz/sdk";
 import { ethers } from "ethers";
 
+// Joining to a Guild if any role is accessible by the given address
 await user.join(
     guildId,                        // Insert Guild ID here
-    ethers.Wallet.createRandom());  // Your/User wallet
+    walletAddress,                  // Your wallet address
+    signerFunction);                // Your lib's signing method
 ```
 {% endtab %}
 
@@ -515,11 +528,12 @@ Guild ID could be a number or an urlName of a guild.
 ```typescript
 import { guild } from "@guildxyz/sdk";
 import { ethers } from "ethers";
-
+    
 await guild.update(
-    guildId,                         // Insert Guild ID here
-    {description: "My new Description"}, 
-    ethers.Wallet.createRandom());  // The Guild owner's wallet
+        guildId,                     // Insert Guild ID here
+        walletAddress,               // Your wallet address
+        signerFunction,              // Your lib's signing method
+        updateGuildParams);          // Params
 ```
 {% endtab %}
 
@@ -599,8 +613,9 @@ import { guild } from "@guildxyz/sdk";
 import { ethers } from "ethers";
 
 await guild.delete(
-    guildId,                        // Insert Guild ID here
-    ethers.Wallet.createRandom());  // The Guild owner's wallet
+        guildId,                     // Insert Guild ID here
+        walletAddress,               // Your wallet address
+        signerFunction);             // Your lib's signing method
 ```
 {% endtab %}
 
@@ -737,8 +752,11 @@ To create a new role, you need to define its requirements and the logic type of 
 import { role } from "@guildxyz/sdk";
 import { ethers } from "ethers";
 
-await role.create({
-        guildId: 1,                // Insert Guild ID here
+await role.create(
+        walletAddress,               // Your wallet address
+        signerFunction,              // Your lib's signing method
+      {
+        guildId: 1,                  // Insert Guild ID here
         name: "My Third Role",
         logic: "AND",
         requirements: [
@@ -751,8 +769,7 @@ await role.create({
             },
           },
         ],
-      },
-     ethers.Wallet.createRandom());  // The Guild owner's wallet
+      });
 
 ```
 {% endtab %}
@@ -836,9 +853,10 @@ import { role } from "@guildxyz/sdk";
 import { ethers } from "ethers";
 
 await role.update(
-        roleId,                         // Insert Role ID here
-        {name: "New Role Name"},
-        ethers.Wallet.createRandom());  // The Guild owner's wallet
+        roleId,                      // Insert Role ID here
+        walletAddress,               // Your wallet address
+        signerFunction,              // Your lib's signing method
+        updateGuildParams);          // Params
 ```
 {% endtab %}
 
@@ -917,8 +935,9 @@ import { role } from "@guildxyz/sdk";
 import { ethers } from "ethers";
 
 await role.delete(
-        roleId,                          // Insert Role ID here
-        ethers.Wallet.createRandom());  // The Guild owner's wallet
+        guildId,                     // Insert Guild ID here
+        walletAddress,               // Your wallet address
+        signerFunction);             // Your lib's signing method
 ```
 {% endtab %}
 
