@@ -4,9 +4,9 @@ description: API for automating token gated access in any applications.
 
 # Guild for Developers
 
-#### Guild.xyz is community infrastructure for web3 and it is interoperable between platforms.
+#### **Guild.xyz is community infrastructure for web3 and it is interoperable between platforms.**
 
-**Check out our SDK here:**  [**https://www.npmjs.com/package/@guildxyz/sdk**](https://www.npmjs.com/package/@guildxyz/sdk) ****&#x20;
+_Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https://www.npmjs.com/package/@guildxyz/sdk) __&#x20;
 
 ## Guilds
 
