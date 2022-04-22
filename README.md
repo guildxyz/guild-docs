@@ -1,4 +1,4 @@
-# Guide
+# Guild for Community Managers
 
 ## Choosing a realm
 
@@ -173,6 +173,21 @@ Getting your community in your roles has multiple options, you can use the one t
   Sharing the link to your guild page with your users on any social platforms, privately in messages or publicly in your bio. If you use Discord with your community it will look like this: a pinned link into a channel in your server that leads to your guild page. Here members have to click on the '_Join guild'_ button to access all levels (roles) they are eligible for, sign a message and done.
 * **Option 3: /join command**\
   Users can type in the _/join_ command into ANY channel in your server where they will see a private post by our bot (not DM but its only that one user who sees this in response to their command) with a button to authenticate on the guild page and boom, done.
+
+## Verifying wallets, linking multiple addresses
+
+In order to get your desired role(s), you need to connect and verify your wallet, address(es). Here's how you can do it step by step:
+
+**On your desktop:**\
+****1. Click on 'Connect to a wallet' on [guild.xyz](https://guild.xyz) and choose between the MetaMask, WalletConnect and Coinbase Wallet options.\
+2\. Follow the wallet's instructions and sign the message to verify your address.\
+3\. In order to link more addresses, change to the address you want to verify in your wallet, then click on your account on [guild.xyz](https://guild.xyz) and press the 'Sign message to verify address' button.
+
+**On your mobile:**\
+****1/a. If you use MetaMask browser: All good, you're already connected with the app.\
+1/b. If you use other browsers: Click on 'Connect to a wallet' on [guild.xyz](https://guild.xyz) and choose between the WalletConnect and Coinbase Wallet options. (Note: if you have MetaMask wallet, just click on WalletConnect and then choose the MetaMask option and follow the instructions.)\
+2\. Follow the wallet's instructions and sign the message to verify your address.\
+3\. In order to link more addresses, change to the address you want to verify in your wallet, then click on your account on [guild.xyz](https://guild.xyz) and press the 'Sign message to verify address' button.
 
 ## **Troubleshooting 101**
 
