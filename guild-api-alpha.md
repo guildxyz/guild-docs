@@ -8,6 +8,14 @@ description: API for automating token gated access in any applications.
 
 **Check out our SDK here:**  [**https://www.npmjs.com/package/@guildxyz/sdk**](https://www.npmjs.com/package/@guildxyz/sdk) **.**
 
+**Automate new role creation, manage hundreds of roles and update them on the fly.**
+
+A few examples where this could be useful:
+
+1. An NFT issuer platform can create new roles for every new collection.
+2. Extend an allow list automatically.
+3. Users can invite others by adding their address to an allow list.
+
 ## Guilds
 
 {% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
@@ -62,7 +70,7 @@ description: API for automating token gated access in any applications.
 {% endswagger-response %}
 {% endswagger %}
 
-Create a new community by creating a guild.
+Guild is the atomic
 
 {% tabs %}
 {% tab title="Guild SDK" %}
@@ -674,18 +682,12 @@ Each role can represent a membership type, grant temporary or permanent access t
 
 Common use-cases include:
 
-1. Permission management for work collaboration.
-2. Membership access to articles or newsletter.
-3. Ticket to a virtual event.
-4. Special privileges in a social application.
-
-Besides integrating Guild into new platforms, this API is also useful for communities that need more control over their membership layers. You can **automate new role creation, manage hundreds of roles and update roles on the fly.**
-
-A few examples where this could be useful:
-
-1. An NFT issuer platform can create new roles for every new collection.
-2. Extend an allow list automatically.
-3. Users can invite others by adding their address to an allow list.
+1. **Membership tiers**
+2. **Clubs**
+3. **Permission management for work collaboration.**
+4. **Access** to articles.
+5. **Ticket** to a virtual event or IRL.
+6. **Special privileges** in a social application.
 
 {% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
 {% swagger-description %}
