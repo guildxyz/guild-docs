@@ -1,5 +1,15 @@
 # Table of contents
 
 * [Guild for Community Managers](README.md)
+* [Guild for NFT creators](guild-for-nft-creators.md)
 * [Guild for Developers](guild-api-alpha.md)
 * [API Security](authentication.md)
+* [Guild Query Engine](guild-query-engine.md)
+* [Guild Guard](guild-guard.md)
+* [Guild Voting](guild-voting.md)
+* [Example Guilds](example-guilds.md)
+* [Platforms Supported](platforms-supported.md)
+* [Blockchains Supported](blockchains-supported.md)
+* [Protocol Integrations](protocol-integrations.md)
+* [Privacy, Self-Sovereignty](privacy-self-sovereignty.md)
+* [Decentralization](decentralization.md)
