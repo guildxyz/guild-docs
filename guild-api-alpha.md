@@ -2,19 +2,11 @@
 description: API for automating token gated access in any applications.
 ---
 
-# Guild API (Alpha)
+# Guild for Developers
 
-#### Guild.xyz is the membership layer protocol for web3 communities, making community management easy and interoperable between platforms.
+#### Guild.xyz is community infrastructure for web3 and it is interoperable between platforms.
 
-**Check out our SDK here:**  [**https://www.npmjs.com/package/@guildxyz/sdk**](https://www.npmjs.com/package/@guildxyz/sdk) **.**
-
-**Automate new role creation, manage hundreds of roles and update them on the fly.**
-
-A few examples where this could be useful:
-
-1. An NFT issuer platform can create new roles for every new collection.
-2. Extend an allow list automatically.
-3. Users can invite others by adding their address to an allow list.
+**Check out our SDK here:**  [**https://www.npmjs.com/package/@guildxyz/sdk**](https://www.npmjs.com/package/@guildxyz/sdk) ****&#x20;
 
 ## Guilds
 
@@ -530,6 +522,13 @@ Guild ID could be a number or an urlName of a guild.
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+**Automate new role creation, manage hundreds of roles and update them on the fly.**
+
+A few examples where this could be useful:
+
+1. Extend an allow list automatically.
+2. Users can invite others by adding their address to an allow list.
 
 {% tabs %}
 {% tab title="Guild SDK" %}
