@@ -13,3 +13,4 @@
 * [Protocol Integrations](protocol-integrations.md)
 * [Privacy, Self-Sovereignty](privacy-self-sovereignty.md)
 * [Decentralization](decentralization.md)
+* [How to Apply](how-to-apply.md)
