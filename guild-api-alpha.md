@@ -4,8 +4,6 @@ description: API for automating token gated access in any applications.
 
 # Guild for Developers
 
-#### **Guild.xyz is community infrastructure for web3.**
-
 _Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https://www.npmjs.com/package/@guildxyz/sdk) __&#x20;
 
 ## Guilds
@@ -62,9 +60,7 @@ _Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https
 {% endswagger-response %}
 {% endswagger %}
 
-Guild is the atomic
-
-#### &#x20;**and it is interoperable between platforms**
+Guild is an atomic unit of every communities
 
 {% tabs %}
 {% tab title="Guild SDK" %}
