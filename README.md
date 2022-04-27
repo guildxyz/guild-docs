@@ -15,7 +15,7 @@ _Guild is going platform agnostic: 30+ platform integrations coming this year._
 * **Adding the Guild.xyz bot:**\
   Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's the best if you choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
 
-![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7).png>)
+![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7) (1).png>)
 
 On the Discord page that popped up after clicking on the _'Add Guild.xyz bot'_ button, choose the server you want the bot to be invited to. (it's possible that here you have to complete an 'I am not a robot' picture-selecting page as well)
 
@@ -24,7 +24,7 @@ On the Discord page that popped up after clicking on the _'Add Guild.xyz bot'_ b
 * **Role of the Guild.xyz bot:**\
   ****Make sure the _Guild.xyz_ bot role is above every other role it has to manage (it'll generate one for your guild once it has been created). Alternatively, you can edit its role to be able to manage channels and roles.
 
-![Setting the role placement of the Guild.xyz bot](<.gitbook/assets/image (18).png>)
+![Setting the role placement of the Guild.xyz bot](<.gitbook/assets/image (18) (1).png>)
 
 After these, you can return to the guild page and continue creating your guild, the _Guild.xyz_ bot is now in your server.
 
@@ -32,7 +32,7 @@ After these, you can return to the guild page and continue creating your guild, 
   This is an already existing channel (welcome/gm/start-here) within your server where everyone who is joining your guild will enter first.\
   Don't worry! After setting up your guild, you can always change the starting channel by choosing another one and inviting the _Guild.xyz_ bot there with the /join-button command. _(more info at the 'Onboarding your community' section below)_
 
-![Choosing the starting channel for your server](<.gitbook/assets/image (3).png>)
+![Choosing the starting channel for your server](<.gitbook/assets/image (3) (1).png>)
 
 * **Managing roles:**\
   Guild creates your roles and makes sure about that only those who qualify can get access to it. What that role sees and does is fully up to you and your Discord settings. After your users gain access to a role within your Discord, you have the ability to manage what that role can do and see in all of your servers.\
@@ -51,7 +51,7 @@ After these, you can return to the guild page and continue creating your guild, 
 ![Adding the Guild bot to your TG group](<.gitbook/assets/Screenshot 2022-03-16 at 15.23.00.png>)
 
 Click on the _'Add Guild bot'_, and this will lead you to Telegram where you can choose which group you want to add it to. Click on the selected group and add the bot. You will get the following message + an instructional video:\
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (1).png>)
 
 The video shows you how to convert your group into a Supergroup. These are only a few steps and necessary for the Guild bot to function well later:
 
@@ -62,7 +62,7 @@ The video shows you how to convert your group into a Supergroup. These are only 
    __
 
 When you are done you'll get the next message + a video:\
-![](<.gitbook/assets/image (6).png>)
+![](<.gitbook/assets/image (6) (1).png>)
 
 This message contains a video, showing you the steps how to add the bot as an administrator:
 
@@ -74,7 +74,7 @@ This message contains a video, showing you the steps how to add the bot as an ad
 
 After that you will get the following instructions:
 
-![](<.gitbook/assets/image (4).png>)
+![](<.gitbook/assets/image (4) (1).png>)
 
 The group ID is what you have to copy and paste into the ‘Create guild’ page.
 
@@ -111,7 +111,7 @@ Guild is listening to events on the blockchain all the time and revokes roles fr
 
 Choose asset types or from our native integrations.
 
-![](<.gitbook/assets/image (8).png>) ![](<.gitbook/assets/Screenshot 2022-03-09 at 17.33.20.png>)
+![](<.gitbook/assets/image (8) (1).png>) ![](<.gitbook/assets/Screenshot 2022-03-09 at 17.33.20.png>)
 
 **Step 5: Summon your guild**
 
@@ -147,7 +147,7 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
 2.  **Manage the permissions**\
     There are now two default states for a channel: **synced** and **not-synced**.\
     A synced channel will have permissions that completely match that of the category. If you want the change the category permissions: right-click the category and click on the 'edit category'.\
-    ![](<.gitbook/assets/image (5).png>)\
+    ![](<.gitbook/assets/image (5) (1).png>)\
     \
     Click on the _'Permissions'_ tab to alter permissions and add roles.\
     ![](<.gitbook/assets/image (13).png>)
