@@ -184,8 +184,8 @@ In order to get your desired role(s), you need to connect and verify your wallet
 3\. In order to link more addresses, change to the address you want to verify in your wallet, then click on your account on [guild.xyz](https://guild.xyz) and press the 'Sign message to verify address' button.
 
 **On your mobile:**\
-****1/a. If you use MetaMask browser: All good, you're already connected with the app.\
-1/b. If you use other browsers: Click on 'Connect to a wallet' on [guild.xyz](https://guild.xyz) and choose between the WalletConnect and Coinbase Wallet options. (Note: if you have MetaMask wallet, just click on WalletConnect and then choose the MetaMask option and follow the instructions.)\
+****1/a. MetaMask app browser: go to guild.xyz, click on 'Connect to a wallet' and choose between 'MetaMask' and 'Coinbase Wallet'.\
+1/b. Other browsers: go to guild.xyz, click on 'Connect to a wallet' and choose between the WalletConnect and Coinbase Wallet options. (Note: if you have MetaMask wallet, just click on WalletConnect, then choose MetaMask)\
 2\. Follow the wallet's instructions and sign the message to verify your address.\
 3\. In order to link more addresses, change to the address you want to verify in your wallet, then click on your account on [guild.xyz](https://guild.xyz) and press the 'Sign message to verify address' button.
 
