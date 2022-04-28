@@ -752,8 +752,8 @@ import { role } from "@guildxyz/sdk";
 import { ethers } from "ethers";
 
 await role.create(
-        walletAddress,               // Your wallet address
-        signerFunction,              // Your lib's signing method
+      walletAddress,                 // Your wallet address
+      signerFunction,                // Your lib's signing method
       {
         guildId: 1,                  // Insert Guild ID here
         name: "My Third Role",
@@ -1093,6 +1093,7 @@ Allow lists, commonly referred to as "whitelists" enable curation based on a lis
     "type": "ALLOWLIST",
     "data": {
         "addresses": string[] // the allowed user addresses
+    }
 }
 ```
 
