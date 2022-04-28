@@ -6,7 +6,7 @@
 * [API Security](authentication.md)
 * [Guild Guard](guild-guard.md)
 * [Guild Query Engine](guild-query-engine.md)
-* [Guild Voting](guild-voting.md)
+* [Guild Voting (WIP)](guild-voting-wip.md)
 * [Example Guilds](example-guilds.md)
 * [Platforms Supported](platforms-supported.md)
 * [Blockchains Supported](blockchains-supported.md)
