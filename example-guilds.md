@@ -1,7 +1,5 @@
 # Example Guilds
 
-###
-
 ### Protocol DAO
 
 ### Venture DAO
