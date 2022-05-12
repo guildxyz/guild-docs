@@ -12,7 +12,9 @@ description: >-
 
 <summary>Can I gate my Discord server and Telegram group within one guild?</summary>
 
-Multi-platform gating in one guild is not currently possible, but we are working on it.
+Multi-platform gating in one guild is not currently possible, but good news: we are working on it.
+
+![](<../.gitbook/assets/image (9).png>)
 
 </details>
 
@@ -130,7 +132,7 @@ Signing is the only way we can truly know that you are the owner of the wallet y
 Yes! If you join a guild with a different address but the same Discord account, your addresses will be linked together and both will be used to check requirements.\
 \
 ![](<../.gitbook/assets/image (23).png>)\
-![](<../.gitbook/assets/image (6).png>)\
+![](<../.gitbook/assets/image (6) (1).png>)\
 
 
 </details>

@@ -30,11 +30,11 @@ In the next step you can **list the poll options and the reactions** (up to 20):
 You can skip to the next step using the ** `/enough` slash command** (after you have successfully added 2 or more options).\
 When you are done you will be prompted to **specify the expiration date** of the poll in the form of `dd:hh:mm` where _dd_ is the number of days, _hh_ is the number of hours and _mm_ is the number of minutes. Both `0:1:3` and `00:01:3` are valid inputs.
 
-![](<.gitbook/assets/image (9) (1).png>)
+![](<.gitbook/assets/image (9) (1) (1).png>)
 
 After specifying the date the bot will show you **how the poll will look like** when published:
 
-![](<.gitbook/assets/image (6) (1).png>)
+![](<.gitbook/assets/image (6) (1) (1).png>)
 
 
 

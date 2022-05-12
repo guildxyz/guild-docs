@@ -62,7 +62,7 @@ The video shows you how to convert your group into a Supergroup. These are only 
    __
 
 When you are done you'll get the next message + a video:\
-![](<.gitbook/assets/image (6) (1) (1).png>)
+![](<.gitbook/assets/image (6) (1) (1) (1).png>)
 
 This message contains a video, showing you the steps how to add the bot as an administrator:
 
