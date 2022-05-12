@@ -142,7 +142,7 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
 
 1. **Arrange your categories and channels**\
    Do it however you want regarding to your plans with the roles' permissions. Mind you, when you move channels between categories, you'll be asked if you want to sync the permissions and the answer is Yes. This means that Discord will automatically update the permissions on a channel to match those of the category upon a move.\
-   ![](<.gitbook/assets/image (10).png>)\
+   ![](<.gitbook/assets/image (10) (1).png>)\
 
 2.  **Manage the permissions**\
     There are now two default states for a channel: **synced** and **not-synced**.\
