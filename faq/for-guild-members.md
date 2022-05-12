@@ -24,7 +24,7 @@ All you need to do is verify your wallet and hit the Guild.xyz bot ‘Join’ bu
 
 Once you join a guild, your roles will appear under your name. You can check them by clicking on your name while on the server.
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 </details>
 
@@ -40,7 +40,7 @@ There are different scenarios that can cause this message to pop up:
    Maybe you meet the requirements - you have the specific tokens, you are on the allowlist etc. - but you have multiple addresses, and right now you use the one that can’t get you in.\
    In this case, double-check your connected wallet and linked addresses in your [Guild.xyz](https://guild.xyz) Account whether you use the correct one to get your roles.\
    \
-   ![](<../.gitbook/assets/image (5).png>)\
+   ![](<../.gitbook/assets/image (5) (1).png>)\
    ![](<../.gitbook/assets/image (9) (1).png>)\
 
 3. Your address is connected to another Discord ID.

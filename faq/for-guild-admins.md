@@ -14,7 +14,7 @@ description: >-
 
 Multi-platform gating in one guild is not currently possible, but good news: we are working on it.
 
-![](<../.gitbook/assets/image (9).png>)
+<img src="../.gitbook/assets/image (9).png" alt="" data-size="original">
 
 </details>
 
@@ -48,8 +48,13 @@ The bot can only add/remove roles if its permission is on the top of the ones it
 
 <summary>Can I have more admins in my guild?</summary>
 
-Yes, multi-admin management is available. If you want to have more admins in your guild, you can add multiple addresses in the 'Edit Guild' section.\
-For more info, click (link)
+Yes, multi-admin management is available in your guild. If you want to have more admins, you can add multiple addresses in the 'Edit guild' section.
+
+![](<../.gitbook/assets/image (2).png>)
+
+_Note: Guild Admins have a slightly faded crown above their address._
+
+__![](<../.gitbook/assets/image (22).png>)
 
 </details>
 
@@ -60,8 +65,13 @@ For more info, click (link)
 Absolutely! There are 3 ways to have more privacy around your guild:
 
 1. Hiding your guild from explorer (Note: by URL, it can be found)
-2. Hiding your members' addresses
-3. Hiding the addresses on your allowlists
+2. Hiding your members' addresses\
+   \
+   ![](<../.gitbook/assets/image (8).png>)\
+
+3. Hiding the addresses on your allowlists\
+   \
+   ![](<../.gitbook/assets/image (13).png>)
 
 </details>
 
@@ -73,13 +83,19 @@ Absolutely! There are 3 ways to have more privacy around your guild:
 
 Yes! When you create a role in your guild, the bot will automatically add it to your Discord server with the same name.
 
+![](<../.gitbook/assets/image (15).png>)
+
+![](<../.gitbook/assets/image (5).png>)
+
 </details>
 
 <details>
 
 <summary>Will the Guild.xyz bot remove roles if a member doesn't fulfil the requirements anymore?</summary>
 
-Yes, We’re listening to blockchain events and manage roles in real-time based on these events.
+Yes, We’re listening to blockchain events and manage roles in real-time based on these events. Whenever users don't meet the requirements for a role anymore, our bot will send them a private message like:
+
+![](<../.gitbook/assets/image (24).png>)
 
 </details>
 
@@ -87,7 +103,7 @@ Yes, We’re listening to blockchain events and manage roles in real-time based 
 
 <summary>Why does the bot give ' ' role on my Discord server?</summary>
 
-This happens when you delete the role that the Guild.xyz bot has created on your server.
+This happens when you delete the Discord role that the Guild.xyz bot has created on your server.
 
 </details>
 
@@ -104,6 +120,8 @@ Yes, of course! If it's up to us, you can add an infinite number of roles, but o
 <summary>Why the bot doesn't give roles on my server?</summary>
 
 If that happens then the Guild.xyz bot role is not above every other user roles it has to manage on Discord. It’s the only way for the bot to add/remove roles to/from your members.
+
+![](<../.gitbook/assets/image (7).png>)
 
 </details>
 

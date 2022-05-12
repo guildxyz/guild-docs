@@ -15,11 +15,11 @@ _Guild is going platform agnostic: 30+ platform integrations coming this year._
 * **Adding the Guild.xyz bot:**\
   Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's the best if you choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
 
-![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7) (1) (1).png>)
+![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7) (1) (1) (1).png>)
 
 On the Discord page that popped up after clicking on the _'Add Guild.xyz bot'_ button, choose the server you want the bot to be invited to. (it's possible that here you have to complete an 'I am not a robot' picture-selecting page as well)
 
-![](<.gitbook/assets/image (11).png>) ![](.gitbook/assets/Untitled.png)
+![](<.gitbook/assets/image (11) (1).png>) ![](.gitbook/assets/Untitled.png)
 
 * **Role of the Guild.xyz bot:**\
   ****Make sure the _Guild.xyz_ bot role is above every other role it has to manage (it'll generate one for your guild once it has been created). Alternatively, you can edit its role to be able to manage channels and roles.
@@ -111,7 +111,7 @@ Guild is listening to events on the blockchain all the time and revokes roles fr
 
 Choose asset types or from our native integrations.
 
-![](<.gitbook/assets/image (8) (1) (1).png>) ![](<.gitbook/assets/Screenshot 2022-03-09 at 17.33.20.png>)
+![](<.gitbook/assets/image (8) (1) (1) (1).png>) ![](<.gitbook/assets/Screenshot 2022-03-09 at 17.33.20.png>)
 
 **Step 5: Summon your guild**
 
@@ -147,10 +147,10 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
 2.  **Manage the permissions**\
     There are now two default states for a channel: **synced** and **not-synced**.\
     A synced channel will have permissions that completely match that of the category. If you want the change the category permissions: right-click the category and click on the 'edit category'.\
-    ![](<.gitbook/assets/image (5) (1) (1).png>)\
+    ![](<.gitbook/assets/image (5) (1) (1) (1).png>)\
     \
     Click on the _'Permissions'_ tab to alter permissions and add roles.\
-    ![](<.gitbook/assets/image (13).png>)
+    ![](<.gitbook/assets/image (13) (1).png>)
 
     \
     **Good to know:**\

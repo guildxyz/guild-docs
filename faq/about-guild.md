@@ -6,7 +6,7 @@
 
 [Guild.xyz](https://guild.xyz) is a token-enabled membership management tool to create, organize and scale communities on Discord and beyond. It supports millions of tokens, NFTs, POAPs on multiple chains while becoming the infrastructure to build bridges across web3 ecosystems.
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 </details>
 
