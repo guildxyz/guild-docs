@@ -1,5 +1,5 @@
 ---
-description: IN PROGRESS, COPIED GUILD MEMBER PAGE
+description: IN PROGRESS, to be continued
 ---
 
 # For Guild Admins
