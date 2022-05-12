@@ -38,33 +38,26 @@ The bot can only add/remove roles if its permission is on the top of the ones it
 
 </details>
 
-## Wallet Management & Safety
+## Guild Management
 
 <details>
 
-<summary>Is connecting my wallet on guild.xyz safe?</summary>
+<summary>Can I have more admins in my guild?</summary>
 
-Absolutely! When you sign in with guild.xyz, you only are validating ownership of the wallet address. The Guild.xyz bot does not get any permissions to perform transactions, and does not have any way of withdrawing anything from your wallet.
+Yes, multi-admin management is available. If you want to have more admins in your guild, you can add multiple addresses in the 'Edit Guild' section.\
+For more info, click (link)
 
 </details>
 
 <details>
 
-<summary>Why do I need to sign a message in addition to connecting my wallet?</summary>
+<summary>Is it possible to make my guild more private?</summary>
 
-Signing is the only way we can truly know that you are the owner of the wallet you are connecting. Signing is a safe, gas-less transaction that does not in any way give Guild.xyz permission to perform any transactions with your wallet.
+Absolutely! There are 3 ways to have more privacy around your guild:
 
-</details>
-
-<details>
-
-<summary>Can I link more addresses under my account for requirement checks?</summary>
-
-Yes! If you join a guild with a different address but the same Discord account, your addresses will be linked together and both will be used to check requirements.\
-\
-![](<../.gitbook/assets/image (23).png>)\
-![](<../.gitbook/assets/image (6).png>)\
-
+1. Hiding your guild from explorer (Note: by URL, it can be found)
+2. Hiding your members' addresses
+3. Hiding the addresses on your allowlists
 
 </details>
 
