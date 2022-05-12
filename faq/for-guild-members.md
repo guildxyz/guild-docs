@@ -1,3 +1,9 @@
+---
+description: >-
+  Answers to the questions we get asked the most from users who have joined or
+  about to join any guild.
+---
+
 # For Guild Members
 
 ## Roles
@@ -68,4 +74,9 @@ Yes! If you join a guild with a different address but the same Discord account, 
 
 
 </details>
+
+## Need more help?
+
+We got you covered!\
+If you have a question that you can't find the answer to, contact the team on our [Discord](https://discord.gg/guildxyz) or send a dm to [Han](https://twitter.com/ikbenhan), our community manager (Discord ID: Han xyz#0013)
 

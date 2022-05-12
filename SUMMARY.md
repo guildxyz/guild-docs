@@ -17,6 +17,6 @@
 
 ## FAQ
 
-* [About Guild.xyz](faq/about-guild.xyz.md)
+* [About Guild](faq/about-guild.md)
 * [For Guild Members](faq/for-guild-members.md)
 * [For Guild Admins](faq/for-guild-admins.md)

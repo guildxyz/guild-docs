@@ -15,7 +15,7 @@ _Guild is going platform agnostic: 30+ platform integrations coming this year._
 * **Adding the Guild.xyz bot:**\
   Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's the best if you choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
 
-![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7) (1).png>)
+![Adding the Guild.xyz bot to your server](<.gitbook/assets/image (7) (1) (1).png>)
 
 On the Discord page that popped up after clicking on the _'Add Guild.xyz bot'_ button, choose the server you want the bot to be invited to. (it's possible that here you have to complete an 'I am not a robot' picture-selecting page as well)
 
@@ -51,7 +51,7 @@ After these, you can return to the guild page and continue creating your guild, 
 ![Adding the Guild bot to your TG group](<.gitbook/assets/Screenshot 2022-03-16 at 15.23.00.png>)
 
 Click on the _'Add Guild bot'_, and this will lead you to Telegram where you can choose which group you want to add it to. Click on the selected group and add the bot. You will get the following message + an instructional video:\
-![](<.gitbook/assets/image (1).png>)
+![](<.gitbook/assets/image (1) (1).png>)
 
 The video shows you how to convert your group into a Supergroup. These are only a few steps and necessary for the Guild bot to function well later:
 
