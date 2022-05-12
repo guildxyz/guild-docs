@@ -14,3 +14,17 @@
 * [Privacy, Self-Sovereignty](privacy-self-sovereignty.md)
 * [Decentralization](decentralization.md)
 * [How to Apply](how-to-apply.md)
+
+## FAQ
+
+* [About Guild.xyz](faq/about-guild.xyz.md)
+* [For Guild Members](faq/for-guild-members.md)
+* [For Guild Admins](faq/for-guild-admins.md)
+* [Member FAQ](faq/member-faq/README.md)
+  * [About Roles](faq/member-faq/about-roles.md)
+  * [Wallet Management](faq/member-faq/wallet-management.md)
+* [Guild Owner FAQ](faq/guild-owner-faq/README.md)
+  * [About Roles & GuildBot](faq/guild-owner-faq/about-roles-and-guildbot.md)
+  * [Guild Creation](faq/guild-owner-faq/guild-creation.md)
+  * [Guild Management](faq/guild-owner-faq/guild-management.md)
+  * [Wallet Management](faq/guild-owner-faq/wallet-management.md)

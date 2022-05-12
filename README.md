@@ -62,7 +62,7 @@ The video shows you how to convert your group into a Supergroup. These are only 
    __
 
 When you are done you'll get the next message + a video:\
-![](<.gitbook/assets/image (6) (1).png>)
+![](<.gitbook/assets/image (6) (1) (1).png>)
 
 This message contains a video, showing you the steps how to add the bot as an administrator:
 
@@ -74,7 +74,7 @@ This message contains a video, showing you the steps how to add the bot as an ad
 
 After that you will get the following instructions:
 
-![](<.gitbook/assets/image (4) (1).png>)
+![](<.gitbook/assets/image (4) (1) (1).png>)
 
 The group ID is what you have to copy and paste into the ‘Create guild’ page.
 
@@ -111,7 +111,7 @@ Guild is listening to events on the blockchain all the time and revokes roles fr
 
 Choose asset types or from our native integrations.
 
-![](<.gitbook/assets/image (8) (1).png>) ![](<.gitbook/assets/Screenshot 2022-03-09 at 17.33.20.png>)
+![](<.gitbook/assets/image (8) (1) (1).png>) ![](<.gitbook/assets/Screenshot 2022-03-09 at 17.33.20.png>)
 
 **Step 5: Summon your guild**
 
@@ -147,7 +147,7 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
 2.  **Manage the permissions**\
     There are now two default states for a channel: **synced** and **not-synced**.\
     A synced channel will have permissions that completely match that of the category. If you want the change the category permissions: right-click the category and click on the 'edit category'.\
-    ![](<.gitbook/assets/image (5) (1).png>)\
+    ![](<.gitbook/assets/image (5) (1) (1).png>)\
     \
     Click on the _'Permissions'_ tab to alter permissions and add roles.\
     ![](<.gitbook/assets/image (13).png>)
