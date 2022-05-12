@@ -1,3 +1,7 @@
+---
+description: The essentials about Guild before we dive into details.
+---
+
 # About Guild
 
 <details>
