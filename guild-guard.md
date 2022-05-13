@@ -14,13 +14,13 @@ Guild Guard is a Web3 CAPTCHA to combat bots with the power of Ethereum. It prov
 
 To protect your community, you can add the Guild Guard to your Discord server easily by the following link: [https://guard.guild.xyz/](https://guard.guild.xyz)
 
-_Note: If you're already a guild owner or admin, you can set it up on your guild's page at the ‘Edit Guild - Security’ section._
+_Note: If you're already a guild owner or admin, you can set it up on your guild's page at the ‘Edit Guild - Security’ section also._
 
 ### Entry Channel
 
 The channel where those need to authenticate themselves via the Guild.xyz bot:
 
-* who join your Discord with an invite link after you set up the Guild Guard, and
+* who join your Discord through an invite link after you set up the Guild Guard, and
 * who joined your server before the Guard, but either doesn’t have any role or between the 2 security level setups you chose to authenticate your existing members with roles also.\
   _Note: More info under section 'Security Levels'_
 
@@ -54,9 +54,25 @@ __
 **The key difference between the security levels:**\
 ****If you choose to authenticate your existing members, only people with roles set up your guild can access your server, while if you choose to keep access to existing members, people with any role keep their access to your Discord.
 
-_Note: In the second scenario, if admins create an entirely new role on Discord after setting up the Guard, accounts with that new role only won't be guarded (unless admins manually change the settings and channel permissions)._\
-__
+_Note: In the second scenario, if admins create an entirely new role on Discord after setting up the Guard, accounts with that new role only won't be guarded (unless admins manually change the settings and channel permissions)._
 
 ### Signing to submit on [guard.guild.xyz](https://guard.guild.xyz)
 
 By hitting the ‘Submit’ button, you create a guild with the same name as your Discord server, and it will automatically have a free entry 'Member' role.
+
+## The key to magic
+
+In the entry channel, the newly joined and unauthenticated accounts can only see:
+
+* The server owner,
+* The members with admin rights,
+* The good-intention bots, and
+* The other unauthenticated users.
+
+**The magic behind:**\
+****The reason unauthenticated accounts can't see your members on the entry channel is because everyone who's already verified cannot see that channel either. It's because in the permissions settings the @everyone role is set to not see anything but the entry channel = the 'View Channel' is enabled for that only.
+
+_Note: When people verify themselves on the entry-channel and become a member of your guild with a role, they won’t be able to see that channel anymore and those who are not verified._
+
+**Disclaimer: Discord refresh ‘bug’**\
+****Channels are updated before you press the button, but users are not updated immediately, only if you switch to another channel. After then you cannot switch back to the entry channel you unless you leave the guild in the interface, because you will be stripped of your role and put back into quarantine.
