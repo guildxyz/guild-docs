@@ -14,7 +14,7 @@ description: >-
 
 Multi-platform gating in one guild is not currently possible, but good news: we are working on it.
 
-<img src="../.gitbook/assets/image (9).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (9) (1).png" alt="" data-size="original">
 
 </details>
 
@@ -71,7 +71,7 @@ Absolutely! There are 3 ways to have more privacy around your guild:
 
 3. Hiding the addresses on your allowlists\
    \
-   ![](<../.gitbook/assets/image (13).png>)
+   ![](<../.gitbook/assets/image (13) (1).png>)
 
 </details>
 

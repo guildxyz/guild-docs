@@ -19,7 +19,7 @@ _Guild is going platform agnostic: 30+ platform integrations coming this year._
 
 On the Discord page that popped up after clicking on the _'Add Guild.xyz bot'_ button, choose the server you want the bot to be invited to. (it's possible that here you have to complete an 'I am not a robot' picture-selecting page as well)
 
-![](<.gitbook/assets/image (11) (1).png>) ![](.gitbook/assets/Untitled.png)
+![](<.gitbook/assets/image (11) (1) (1).png>) ![](.gitbook/assets/Untitled.png)
 
 * **Role of the Guild.xyz bot:**\
   ****Make sure the _Guild.xyz_ bot role is above every other role it has to manage (it'll generate one for your guild once it has been created). Alternatively, you can edit its role to be able to manage channels and roles.
@@ -142,7 +142,7 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
 
 1. **Arrange your categories and channels**\
    Do it however you want regarding to your plans with the roles' permissions. Mind you, when you move channels between categories, you'll be asked if you want to sync the permissions and the answer is Yes. This means that Discord will automatically update the permissions on a channel to match those of the category upon a move.\
-   ![](<.gitbook/assets/image (10) (1).png>)\
+   ![](<.gitbook/assets/image (10) (1) (1).png>)\
 
 2.  **Manage the permissions**\
     There are now two default states for a channel: **synced** and **not-synced**.\
@@ -150,7 +150,7 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
     ![](<.gitbook/assets/image (5) (1) (1) (1).png>)\
     \
     Click on the _'Permissions'_ tab to alter permissions and add roles.\
-    ![](<.gitbook/assets/image (13) (1).png>)
+    ![](<.gitbook/assets/image (13) (1) (1).png>)
 
     \
     **Good to know:**\
