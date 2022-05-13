@@ -20,3 +20,4 @@
 * [About Guild](faq/about-guild.md)
 * [For Guild Members](faq/for-guild-members.md)
 * [For Guild Admins](faq/for-guild-admins.md)
+* [About Guild Guard](faq/about-guild-guard.md)

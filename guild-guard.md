@@ -12,7 +12,7 @@ Guild Guard is a Web3 CAPTCHA to combat bots with the power of Ethereum. It prov
 
 ### Adding the Guard to your Discord server
 
-To protect your community, you can add the Guild Guard to your Discord server easily by the following link: [https://guard.guild.xyz/](https://guard.guild.xyz)
+To protect your community, you can add the Guild Guard to your Discord server easily by the following link: [https://guard.guild.xyz/](https://guard.guild.xyz/)
 
 _Note: If you're already a guild owner or admin, you can set it up on your guild's page at the ‘Edit Guild - Security’ section also._
 
@@ -56,7 +56,7 @@ __
 
 _Note: In the second scenario, if admins create an entirely new role on Discord after setting up the Guard, accounts with that new role only won't be guarded (unless admins manually change the settings and channel permissions)._
 
-### Signing to submit on [guard.guild.xyz](https://guard.guild.xyz)
+### Signing to submit on [guard.guild.xyz](https://guard.guild.xyz/)
 
 By hitting the ‘Submit’ button, you create a guild with the same name as your Discord server, and it will automatically have a free entry 'Member' role.
 

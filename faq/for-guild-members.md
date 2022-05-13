@@ -38,7 +38,7 @@ There are different scenarios that can cause this message to pop up:
    In this case, you can [change the network easily](https://autofarm.gitbook.io/autofarm-network/how-tos/defi-beginners-guide/switching-networks-on-metamask).
 2. You’re connected, but with not the correct address.\
    Maybe you meet the requirements - you have the specific tokens, you are on the allowlist etc. - but you have multiple addresses, and right now you use the one that can’t get you in.\
-   In this case, double-check your connected wallet and linked addresses in your [Guild.xyz](https://guild.xyz) Account whether you use the correct one to get your roles.\
+   In this case, double-check your connected wallet and linked addresses in your [Guild.xyz](https://guild.xyz/) Account whether you use the correct one to get your roles.\
    \
    ![](<../.gitbook/assets/image (5) (1).png>)\
    ![](<../.gitbook/assets/image (9) (1) (1).png>)\

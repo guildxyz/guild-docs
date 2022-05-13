@@ -71,7 +71,7 @@ Absolutely! There are 3 ways to have more privacy around your guild:
 
 3. Hiding the addresses on your allowlists\
    \
-   ![](<../.gitbook/assets/image (13) (1).png>)
+   ![](<../.gitbook/assets/image (13) (1) (1).png>)
 
 </details>
 
