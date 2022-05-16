@@ -75,4 +75,4 @@ In the entry channel, the newly joined and unauthenticated accounts can only see
 _Note: When people verify themselves on the entry-channel and become a member of your guild with a role, they won’t be able to see that channel anymore and those who are not verified._
 
 **Disclaimer: Discord refresh ‘bug’**\
-****Channels are updated before you press the button, but users are not updated immediately, only if you switch to another channel. After then you cannot switch back to the entry channel you unless you leave the guild in the interface, because you will be stripped of your role and put back into quarantine.
+****Channels are updated before you press the button, but users are not updated immediately, only if you switch to another channel. After then you cannot switch back to the entry channel unless you leave the guild in the interface, because you will be stripped of your role and put back into quarantine.
