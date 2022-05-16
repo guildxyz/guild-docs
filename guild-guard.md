@@ -48,7 +48,7 @@ As mentioned before, you have the freedom to decide between two security levels 
 
 ![](<.gitbook/assets/image (9).png>) ![](<.gitbook/assets/image (10).png>)
 
-_Note: ETH-compatible chains are also supported for authentication, you just need an EVM address for connecting your wallet._\
+_Note: ETH-compatible chains are also supported for authentication, you just need an EVM address for connecting your wallet. Click_ [_here_](https://docs.guild.xyz/guild/blockchains-supported) _to check out the supported blockchains._\
 __
 
 **The key difference between the security levels:**\
