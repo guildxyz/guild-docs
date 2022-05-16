@@ -33,7 +33,7 @@ You have 2 options to choose from when setting up the entry channel:
 
 _Note: The entry channel is only visible to the server owner, accounts with administrator permission and those who haven't yet authenticated._
 
-__![](<.gitbook/assets/image (12).png>)__
+__![](<../.gitbook/assets/image (12).png>)__
 
 ### Security Levels
 
@@ -46,7 +46,7 @@ As mentioned before, you have the freedom to decide between two security levels 
    ****Those who already have a role don't have to authenticate, they don't lose their server access. In short: Everyone with a role is protected by the Guild Guard.\
    _Note: Although those who already have a role can access your server, they won't become members of your guild until they authenticate themselves._
 
-![](<.gitbook/assets/image (9).png>) ![](<.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (9).png>) ![](<../.gitbook/assets/image (10).png>)
 
 _Note: ETH-compatible chains are also supported for authentication, you just need an EVM address for connecting your wallet. Click_ [_here_](https://docs.guild.xyz/guild/blockchains-supported) _to check out the supported blockchains._\
 __

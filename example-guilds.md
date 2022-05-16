@@ -2,18 +2,26 @@
 
 ### Protocol DAO
 
+{% embed url="https://guild.xyz/early-bloomer" %}
+
+{% embed url="https://guild.xyz/cow-guild" %}
+
 ### Venture DAO
+
+{% embed url="https://guild.xyz/seed-club" %}
+
+### Gaming DAO
+
+{% embed url="https://guild.xyz/smithydao" %}
+
+{% embed url="https://guild.xyz/realmer" %}
 
 ### Service DAO
 
-### DAO Studio
+{% embed url="https://guild.xyz/cyberconnect" %}
 
-### Research Organisation
+### NFT Community
 
-## NFT Community
+{% embed url="https://guild.xyz/milady-village" %}
 
-## Tokenised Communities
-
-## Gaming Guilds
-
-##
+{% embed url="https://guild.xyz/wagumi-cats" %}

@@ -1,19 +1,25 @@
 # Table of contents
 
-* [Guild for Community Managers](README.md)
-* [Guild for NFT creators](guild-for-nft-creators.md)
-* [Guild for Developers](guild-api-alpha.md)
-* [API Security](authentication.md)
-* [Guild Guard](guild-guard.md)
-* [Guild Query Engine](guild-query-engine.md)
-* [Guild Voting (WIP)](guild-voting-wip.md)
+* [Welcome to Guild.xyz](README.md)
+
+## Guides
+
+* [Guild for Community Managers](guides/readme.md)
+* [Guild for NFT creators](guides/guild-for-nft-creators.md)
+* [Guild for Developers](guides/guild-api-alpha.md)
+* [Guild Guard](guides/guild-guard.md)
+* [Guild Voting (WIP)](guides/guild-voting-wip.md)
+
+***
+
 * [Example Guilds](example-guilds.md)
-* [Platforms Supported](platforms-supported.md)
-* [Blockchains Supported](blockchains-supported.md)
-* [Protocol Integrations](protocol-integrations.md)
-* [Privacy, Self-Sovereignty](privacy-self-sovereignty.md)
-* [Decentralization](decentralization.md)
-* [How to Apply](how-to-apply.md)
+* [Integrations](integrations.md)
+
+## Technical
+
+* [API Security](technical/authentication.md)
+* [Guild Query Engine](technical/guild-query-engine.md)
+* [Privacy, Self-Sovereignty](technical/privacy-self-sovereignty.md)
 
 ## FAQ
 
@@ -21,3 +27,10 @@
 * [For Guild Members](faq/for-guild-members.md)
 * [For Guild Admins](faq/for-guild-admins.md)
 * [About Guild Guard](faq/about-guild-guard.md)
+
+## Links
+
+* [Our Guild](https://guild.xyz/our-guild)
+* [Roadmap](https://roadmap.guild.xyz/)
+* [Twitter](https://twitter.com/guildxyz)
+* [Website](https://guild.xyz)
