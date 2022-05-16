@@ -32,7 +32,7 @@ If you need to authenticate yourself to access the server, you will be quarantin
 
 <details>
 
-<summary>What happens if I delete the entry channel or move the ‘Join’ button to a different channel after adding the Guard to your guild already?</summary>
+<summary>What happens if I delete the entry channel or move the ‘Join’ button to a different channel after adding the Guard to my guild already?</summary>
 
 If you change the entry channel where people have to authenticate themselves, or you adjust the permission setups, not verified users won’t be able to see anything on your server.
 
