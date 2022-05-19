@@ -34,18 +34,16 @@ Once you join a guild, your roles will appear under your name. You can check the
 
 There are different scenarios that can cause this message to pop up:
 
-1. You’re connected to the wrong chain/network.\
-   In this case, you can [change the network easily](https://autofarm.gitbook.io/autofarm-network/how-tos/defi-beginners-guide/switching-networks-on-metamask).
-2. You’re connected, but with not the correct address.\
+1. You’re connected, but with not the correct address.\
    Maybe you meet the requirements - you have the specific tokens, you are on the allowlist etc. - but you have multiple addresses, and right now you use the one that can’t get you in.\
    In this case, double-check your connected wallet and linked addresses in your [Guild.xyz](https://guild.xyz/) Account whether you use the correct one to get your roles.\
    \
    ![](<../.gitbook/assets/image (5) (1).png>)\
    ![](<../.gitbook/assets/image (9) (1) (1).png>)\
 
-3. Your address is connected to another Discord ID.
-4. The Guild.xyz bot doesn’t have permissions to manage roles on the server.
-5. If none of them above, unfortunately it’s a bug. In this case, please contact the Guild.xyz team on Discord so we can solve your issue.
+2. Your address is connected to another Discord ID.
+3. The Guild.xyz bot doesn’t have permissions to manage roles on the server.
+4. If none of them above, unfortunately it’s a bug. In this case, please contact the Guild.xyz team on Discord so we can solve your issue.
 
 </details>
 
