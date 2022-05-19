@@ -1,7 +1,7 @@
 ---
 description: >-
-  A summary of all the documents and guides we have collected on our tools, live
-  integrations, features and more.
+  A summary of everything we've collected on our tools, live integrations,
+  features and more.
 ---
 
 # Welcome to Guild.xyz
