@@ -20,6 +20,10 @@ Find detailed information about our API, Query Engine and read the notes on our 
 
 If you have any question, head over to our FAQ section where we've collected some answers to the questions we are asked most often about Guild.xyz.
 
+#### Links
+
+All the official links where you can connect with us.
+
 
 
 ![](.gitbook/assets/LogoBlack.png)
