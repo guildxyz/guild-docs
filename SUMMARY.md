@@ -9,6 +9,7 @@
 * [Guild for Developers](guides/guild-api-alpha.md)
 * [Guild Guard](guides/guild-guard.md)
 * [Guild Voting (WIP)](guides/guild-voting-wip.md)
+* [POAP distribution with Guild](guides/poap-distribution-with-guild.md)
 
 ***
 
