@@ -13,7 +13,7 @@ _Guild is going platform agnostic: 30+ platform integrations coming this year._
   You will need Categories (Welcome/Community/Administrators) + Channels (gm/news/announcements) within these in your server. When you create your guild, you will be able to set which of your new roles get access to which of these categories or channels.\
 
 * **Adding the Guild.xyz bot:**\
-  Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's the best if you choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
+  Paste an invite link to your server here to invite the _Guild.xyz bot_ to your server. It's best to choose a non-expiring link, but if you don’t know how to set that, no worries the _Guild.xyz bot_ will know what’s up.
 
 ![Adding the Guild.xyz bot to your server](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
@@ -35,7 +35,7 @@ After these, you can return to the guild page and continue creating your guild, 
 ![Choosing the starting channel for your server](<../.gitbook/assets/image (3) (1).png>)
 
 * **Managing roles:**\
-  Guild creates your roles and makes sure about that only those who qualify can get access to it. What that role sees and does is fully up to you and your Discord settings. After your users gain access to a role within your Discord, you have the ability to manage what that role can do and see in all of your servers.\
+  Guild creates your roles and makes sure that only those who qualify can get access to it. What that role sees and does is fully up to you and your Discord settings. After your users gain access to a role within your Discord, you have the ability to manage what that role can do and see in all of your servers.\
   A useful tip is that you can manage roles by category as well, not just by channel. This can speed up your admin tasks :) Here's a link to [Discord's Role Management 101](https://support.discord.com/hc/en-us/articles/214836687-Role-Management-101)
 {% endtab %}
 
@@ -115,7 +115,7 @@ Choose asset types or from our native integrations.
 
 **Step 5: Summon your guild**
 
-Hit _'Summon',_ and here you will have to sign a message with your wallet. This, as everything above, is free.
+Hit _'Summon',_ and here you will have to sign a message with your wallet. This, as with everything above, is free.
 
 **Congratulations!** You have created your first guild! On your guild page you can see your members listed, yourself marked with a little crown. You will find a little _'edit'_ button next to the name of your guild. Clicking that will give you the options to:
 
@@ -161,18 +161,18 @@ Here's a short guide on how you can do it (so you don't have to go channel by ch
     \
     3\. Synced and not-synced channels can coexist within a category. Changing a category’s permissions will change all synced channel’s permissions, but not the permissions of any not-synced channel!
 
-If you want to dive into this setup in details, read more here: [Channel Categories 101](https://support.discord.com/hc/en-us/articles/115001580171-Channel-Categories-101)
+If you want to dive into this setup in detail, read more here: [Channel Categories 101](https://support.discord.com/hc/en-us/articles/115001580171-Channel-Categories-101)
 
 ## **Onboarding your community**
 
 Getting your community in your roles has multiple options, you can use the one that suits your community the best! Mind you, these can also be used at the same time without any trouble.
 
 * **Option 1: Join button (/join-button)**\
-  Whenever you create a new role in your guild the _Guild.xyz bot_ automatically posts a _Join ‘guild name’_ button in the channel you chose for the first point of entry for users. This button leads to authentication on your guild page. You can delete this button if you’d rather use an other method or want the button elsewhere. To insert the button in a different channel you have to type: /_join-button_ into the that channel and the bot will insert the button there.
+  Whenever you create a new role in your guild the _Guild.xyz bot_ automatically posts a _Join ‘guild name’_ button in the channel you chose for the first point of entry for users. This button leads to authentication on your guild page. You can delete this button if you’d rather use another method or want the button elsewhere. To insert the button in a different channel you have to type: /_join-button_ into that channel and the bot will insert the button there.
 * **Option 2: Sharing a link**\
   Sharing the link to your guild page with your users on any social platforms, privately in messages or publicly in your bio. If you use Discord with your community it will look like this: a pinned link into a channel in your server that leads to your guild page. Here members have to click on the '_Join guild'_ button to access all levels (roles) they are eligible for, sign a message and done.
 * **Option 3: /join command**\
-  Users can type in the _/join_ command into ANY channel in your server where they will see a private post by our bot (not DM but its only that one user who sees this in response to their command) with a button to authenticate on the guild page and boom, done.
+  Users can type in the _/join_ command into ANY channel in your server where they will see a private post by our bot (not DM but it's only that one user who sees this in response to their command) with a button to authenticate on the guild page and boom, done.
 
 ## Verifying wallets, linking multiple addresses
 
