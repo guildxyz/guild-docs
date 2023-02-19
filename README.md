@@ -10,16 +10,19 @@ description: >-
 
 #### Guides
 
-Get started with an overview of the Guild API & SDK, and voting.\
-Click [here](https://help.guild.xyz/en/) for up-to-date guides and articles on guild creation and management, FAQs and more.
+Get started with an overview of our guides on guild creation, membership management, voting and on protecting Discord communities.
 
 #### Technical
 
 Find detailed information about our API, Query Engine and read the notes on our ZK research on the Privacy, Self-Sovereignty page.
 
+#### FAQ
+
+If you have any question, head over to our FAQ section where we've collected some answers to the questions we are asked most often about Guild.xyz.
+
 #### Links
 
-All the official platforms where you can connect with us.
+All the official links where you can connect with us.
 
 
 
