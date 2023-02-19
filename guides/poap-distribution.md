@@ -1,3 +1,0 @@
-# POAP distribution
-
-coming soon
