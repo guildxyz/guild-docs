@@ -4,7 +4,7 @@ description: API for automating token gated access in any applications.
 
 # Guild for Developers
 
-_Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https://www.npmjs.com/package/@guildxyz/sdk) __&#x20;
+_Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https://www.npmjs.com/package/@guildxyz/sdk)&#x20;
 
 ## Guilds
 
