@@ -15,7 +15,7 @@ Once your guild has been created, you can start customizing it to match your pro
 * Click the settings icon (top right) to enter admin mode
 * This is your control center where you can customize your guild's appearance, structure, and view all guild details
 
-<figure><img src="../.gitbook/assets/Admin dashboard.png" alt=""><figcaption><p>Access the admin dashboard </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Admin dashboard.png" alt=""><figcaption><p>Access your admin dashboard </p></figcaption></figure>
 
 2. **Brand your guild:**
 
@@ -30,7 +30,9 @@ Once your guild has been created, you can start customizing it to match your pro
 * Drag pages to reorder them in your preferred sequence
 * Each page can have its own focus, but keep your home page simple and clear since members will see this first
 
-<figure><img src="../.gitbook/assets/Admin editor (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Admin editor (1).png" alt=""><figcaption><p>Customize pages</p></figcaption></figure>
+
+
 
 4. **Configure the basics:**
 
