@@ -8,20 +8,19 @@ _Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https
 
 ## Guilds
 
-{% swagger method="post" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Create Guild" %}
-{% swagger-description %}
+## Create Guild
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://api.guild.xyz/v1/guild`
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="201: Created" description="created guild" %}
+{% tabs %}
+{% tab title="201: Created created guild" %}
 ```json
 {
    "id":2244,
@@ -33,9 +32,9 @@ _Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https
    "showMembers":true
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
+{% tab title="400: Bad Request errors occurred" %}
 ```json
 {
     "errors": [
@@ -45,9 +44,9 @@ _Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```json
 {
     "errors": [
@@ -57,8 +56,8 @@ _Check out our SDK here:_  [_https://www.npmjs.com/package/@guildxyz/sdk_](https
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Guild is an atomic unit of every communities
 
@@ -148,12 +147,12 @@ const myGuild = await guild.create(
 {% endtab %}
 {% endtabs %}
 
-{% swagger method="get" path="/guild" baseUrl="https://api.guild.xyz/v1" summary="Get All Guilds" %}
-{% swagger-description %}
+## Get All Guilds
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://api.guild.xyz/v1/guild`
 
-{% swagger-response status="200: OK" description="array of guilds" %}
+{% tabs %}
+{% tab title="200: OK array of guilds" %}
 ```json
 [
     {
@@ -166,27 +165,28 @@ const myGuild = await guild.create(
     }
 ]
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="204: No Content" description="empty response, not found" %}
+{% tab title="204: No Content empty response, not found" %}
 **No Guild added.**
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="/guild/access/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Check User Access to a Guild" %}
-{% swagger-description %}
+## Check User Access to a Guild
+
+<mark style="color:blue;">`GET`</mark> `https://api.guild.xyz/v1/guild/access/:id/:address`
+
 The response is separated by role identifiers.
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="id" type="number" required="true" %}
-id of the guild
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="address" type="string" required="true" %}
-address of the user
-{% endswagger-parameter %}
+| Name                                      | Type   | Description         |
+| ----------------------------------------- | ------ | ------------------- |
+| id<mark style="color:red;">\*</mark>      | number | id of the guild     |
+| address<mark style="color:red;">\*</mark> | string | address of the user |
 
-{% swagger-response status="200: OK" description="array of accesses" %}
+{% tabs %}
+{% tab title="200: OK array of accesses" %}
 ```json
 [
    {
@@ -203,9 +203,9 @@ address of the user
    }
 ]
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occured" %}
+{% tab title="400: Bad Request errors occured" %}
 ```json
 {
     "errors": [
@@ -215,9 +215,9 @@ address of the user
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="500: Internal Server Error" description="errors occurred, but response still available" %}
+{% tab title="500: Internal Server Error errors occurred, but response still available" %}
 ```json
 [
    {
@@ -244,23 +244,22 @@ address of the user
    }
 ]
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="/guild/member/:id/:address" baseUrl="https://api.guild.xyz/v1" summary="Get User" %}
-{% swagger-description %}
+## Get User
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://api.guild.xyz/v1/guild/member/:id/:address`
 
-{% swagger-parameter in="path" name="id" type="number" required="true" %}
-id of the guild
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="address" type="string" required="true" %}
-address of the user
-{% endswagger-parameter %}
+| Name                                      | Type   | Description         |
+| ----------------------------------------- | ------ | ------------------- |
+| id<mark style="color:red;">\*</mark>      | number | id of the guild     |
+| address<mark style="color:red;">\*</mark> | string | address of the user |
 
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
    [
       {
@@ -277,9 +276,9 @@ address of the user
       }
    ]
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
+{% tab title="400: Bad Request errors occurred" %}
 ```json
 {
     "errors": [
@@ -289,19 +288,21 @@ address of the user
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="/user/membership/:address" baseUrl="https://api.guild.xyz/v1" summary="Get Guilds Joined by a User" %}
-{% swagger-description %}
+## Get Guilds Joined by a User
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://api.guild.xyz/v1/user/membership/:address`
 
-{% swagger-parameter in="path" name="address" type="string" required="true" %}
-address of the user
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-response status="200: OK" description="" %}
+| Name                                      | Type   | Description         |
+| ----------------------------------------- | ------ | ------------------- |
+| address<mark style="color:red;">\*</mark> | string | address of the user |
+
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 [
    {
@@ -325,9 +326,9 @@ address of the user
    },
 ]
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
+{% tab title="400: Bad Request errors occurred" %}
 ```javascript
 {
     "errors": [
@@ -337,31 +338,30 @@ address of the user
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/user/join" baseUrl="https://api.guild.xyz/v1" summary="Join a Guild" %}
-{% swagger-description %}
+## Join a Guild
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://api.guild.xyz/v1/user/join`
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 [
 
 ]
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
+{% tab title="400: Bad Request errors occurred" %}
 ```javascript
 {
     "errors": [
@@ -371,9 +371,9 @@ address of the user
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```javascript
 {
     "errors": [
@@ -383,8 +383,8 @@ address of the user
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% tabs %}
 {% tab title="Guild SDK" %}
@@ -414,16 +414,18 @@ await user.join(
 {% endtab %}
 {% endtabs %}
 
-{% swagger method="get" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Get a Guild by ID" %}
-{% swagger-description %}
+## Get a Guild by ID
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://api.guild.xyz/v1/guild/:id`
 
-{% swagger-parameter in="path" name="id" type="string" required="true" %}
-id/urlName of the guild
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-response status="200: OK" description="guild object" %}
+| Name                                 | Type   | Description             |
+| ------------------------------------ | ------ | ----------------------- |
+| id<mark style="color:red;">\*</mark> | string | id/urlName of the guild |
+
+{% tabs %}
+{% tab title="200: OK guild object" %}
 ```json
 {
     "id": number,
@@ -468,35 +470,34 @@ id/urlName of the guild
     ]       
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="204: No Content" description="empty response, not found" %}
+{% tab title="204: No Content empty response, not found" %}
 **Specified Guild doesn't exist with the given ID or urlName.**
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Guild ID could be a number or an urlName of a guild.
 
-{% swagger method="patch" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Guild" %}
-{% swagger-description %}
+## Update Guild
 
-{% endswagger-description %}
+<mark style="color:purple;">`PATCH`</mark> `https://api.guild.xyz/v1/guild/:id`
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="array of accesses to roles" %}
+{% tabs %}
+{% tab title="200: OK array of accesses to roles" %}
 ```json
 ///
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occurred" %}
+{% tab title="400: Bad Request errors occurred" %}
 ```json
 {
     "errors": [
@@ -506,9 +507,9 @@ Guild ID could be a number or an urlName of a guild.
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```json
 {
     "errors": [
@@ -518,8 +519,8 @@ Guild ID could be a number or an urlName of a guild.
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 **Automate new role creation, manage hundreds of roles and update them on the fly.**
 
@@ -561,32 +562,33 @@ await guild.update(
 {% endtab %}
 {% endtabs %}
 
-{% swagger method="delete" path="/guild/:id" baseUrl="https://api.guild.xyz/v1" summary="Delete Guild" %}
-{% swagger-description %}
+## Delete Guild
 
-{% endswagger-description %}
+<mark style="color:red;">`DELETE`</mark> `https://api.guild.xyz/v1/guild/:id`
 
-{% swagger-parameter in="path" type="number" required="true" %}
+#### Path Parameters
 
-{% endswagger-parameter %}
+| Name                               | Type   | Description |
+| ---------------------------------- | ------ | ----------- |
+| <mark style="color:red;">\*</mark> | number |             |
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
 {
     "success": boolean
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occured" %}
+{% tab title="400: Bad Request errors occured" %}
 ```json
 {
     "errors": [
@@ -596,9 +598,9 @@ await guild.update(
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```json
 {
     "errors": [
@@ -608,8 +610,8 @@ await guild.update(
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% tabs %}
 {% tab title="Guild SDK" %}
@@ -640,16 +642,18 @@ await guild.delete(
 
 ## Roles
 
-{% swagger method="get" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Get Role" %}
-{% swagger-description %}
+## Get Role
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://api.guild.xyz/v1/role/:id`
 
-{% swagger-parameter in="path" type="number" required="true" %}
+#### Path Parameters
 
-{% endswagger-parameter %}
+| Name                               | Type   | Description |
+| ---------------------------------- | ------ | ----------- |
+| <mark style="color:red;">\*</mark> | number |             |
 
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
 {
    "imageUrl":"/guildLogos/107.svg",
@@ -666,12 +670,12 @@ await guild.delete(
    ],
    }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="204: No Content" description="" %}
+{% tab title="204: No Content " %}
 **Specified Role doesn't exist with the given ID.**
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Roles are the building-blocks of all guilds. You can create as many as you want to distinguish users by certain conditions.
 
@@ -686,20 +690,19 @@ Common use-cases include:
 5. **Ticket** to a virtual event or IRL.
 6. **Special privileges** in a social application.
 
-{% swagger method="post" path="/role" baseUrl="https://api.guild.xyz/v1" summary="Create Role" %}
-{% swagger-description %}
+## Create Role
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://api.guild.xyz/v1/role`
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="201: Created" description="Created Role" %}
+{% tabs %}
+{% tab title="201: Created Created Role" %}
 ```json
 {
    "imageUrl":"/guildLogos/107.svg",
@@ -716,9 +719,9 @@ Common use-cases include:
    ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occured" %}
+{% tab title="400: Bad Request errors occured" %}
 ```json
 {
     "errors": [
@@ -728,9 +731,9 @@ Common use-cases include:
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```json
 {
     "errors": [
@@ -740,8 +743,8 @@ Common use-cases include:
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 To create a new role, you need to define its requirements and the logic type of stacking these requirements.
 
@@ -791,32 +794,33 @@ await role.create(
 {% endtab %}
 {% endtabs %}
 
-{% swagger method="patch" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Update Role" %}
-{% swagger-description %}
+## Update Role
 
-{% endswagger-description %}
+<mark style="color:purple;">`PATCH`</mark> `https://api.guild.xyz/v1/role/:id`
 
-{% swagger-parameter in="path" type="number" required="true" %}
+#### Path Parameters
 
-{% endswagger-parameter %}
+| Name                               | Type   | Description |
+| ---------------------------------- | ------ | ----------- |
+| <mark style="color:red;">\*</mark> | number |             |
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
     // Response
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occured" %}
+{% tab title="400: Bad Request errors occured" %}
 ```json
 {
     "errors": [
@@ -826,9 +830,9 @@ await role.create(
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```json
 {
     "errors": [
@@ -838,8 +842,8 @@ await role.create(
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 You can update roles anytime, but be aware that existing members might loose access to their guild if the requirements change.
 
@@ -877,32 +881,33 @@ await role.update(
 {% endtab %}
 {% endtabs %}
 
-{% swagger method="delete" path="/role/:id" baseUrl="https://api.guild.xyz/v1" summary="Delete Role" %}
-{% swagger-description %}
+## Delete Role
 
-{% endswagger-description %}
+<mark style="color:red;">`DELETE`</mark> `https://api.guild.xyz/v1/role/:id`
 
-{% swagger-parameter in="path" type="number" required="true" %}
+#### Path Parameters
 
-{% endswagger-parameter %}
+| Name                               | Type   | Description |
+| ---------------------------------- | ------ | ----------- |
+| <mark style="color:red;">\*</mark> | number |             |
 
-{% swagger-parameter in="body" name="payload" type="Object" required="true" %}
+#### Request Body
 
-{% endswagger-parameter %}
+| Name                                         | Type   | Description |
+| -------------------------------------------- | ------ | ----------- |
+| payload<mark style="color:red;">\*</mark>    | Object |             |
+| validation<mark style="color:red;">\*</mark> | Object |             |
 
-{% swagger-parameter in="body" name="validation" type="Object" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
     "success": boolean
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="errors occured" %}
+{% tab title="400: Bad Request errors occured" %}
 ```json
 {
     "errors": [
@@ -912,9 +917,9 @@ await role.update(
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="authentication required" %}
+{% tab title="401: Unauthorized authentication required" %}
 ```json
 {
     "errors": [
@@ -924,8 +929,8 @@ await role.update(
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% tabs %}
 {% tab title="Guild SDK" %}

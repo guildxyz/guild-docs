@@ -1,30 +1,30 @@
----
-description: >-
-  A summary of everything we've collected on our tools, live integrations,
-  features and more.
----
+# What is Guild
 
-# Welcome to Guild.xyz
+Guild is a tool that helps you grow and reward the right community members by tracking onchain and social activity. It manages access to Discord and Telegram, runs quests, and provides analytics to help you better understand your community.
 
-### Welcome to the Guild.xyz Knowledge Base!
+Guild connects your community across 60+ EVM chains and multiple platforms like Discord, Telegram, Twitter, GitHub, and more. \[Check all integrations]
 
-#### Guides
+Crypto projects use Guild for better community management. You see your members' wallet address(es) and their linked social accounts in one place, so you know who is an active onchain user and vocal supporter in your community channels.
 
-Get started with an overview of the Guild API & SDK, and voting.\
-Click [here](https://help.guild.xyz/en/) for up-to-date guides and articles on guild creation and management, FAQs and more.
+Projects usually use Guild to:
 
-#### Technical
+* create token-gated communities
+* grow their community with quests
+* reward active and loyal supporters with Discord roles, NFTs, and tokens
+* analyze their whole community across platforms
 
-Find detailed information about our API, Query Engine and read the notes on our ZK research on the Privacy, Self-Sovereignty page.
+### Why use Guild?
 
-#### Links
+Building your Guild is like building LEGO.
 
-All the official platforms where you can connect with us.
+Our platform is designed to be as flexible and customizable as building blocks, giving you the freedom to create and customize your community space based on your unique needs and preferences.
 
+Guild does both community building and quests. Most platforms focus on one or the other. Community platforms manage access but lack growth tools. Quest platforms run short campaigns but don't build lasting relationships.
 
+Guild combines both. You can build your core community with token-gating and member management. Then run quests and campaigns to grow that community. Your members stay engaged long-term while you attract new ones. Or do the opposite: grow through quests first, then create a more aligned group.
 
-![](.gitbook/assets/LogoBlack.png)
+Guild also helps you identify key community members, such as developers, and reward your most valuable contributors based on metrics that matter to you.
 
-\
- <a href="#roles" id="roles"></a>
----------------------------------
+Don’t struggle with multiple tools to build stronger communities. Just use one: Guild.
+
+<figure><img src=".gitbook/assets/Guild Logo.png" alt=""><figcaption></figcaption></figure>
