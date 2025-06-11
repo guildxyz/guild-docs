@@ -1,30 +1,64 @@
 # Add Guild roles
 
-#### 2. Set up your first role
+### Set up your first role
 
-* You can start configuring the first default role called "Member"
-* Upload role image (optimal size: 128x128)
-* Edit role title and description&#x20;
-* Add requirements to gate access to this role and its rewards&#x20;
-* You can edit the requirement image and text, or keep the default settings
-* Select "Should not satisfy" if you want to exclude members
-* You can customize how many requirements members must satisfy at the top ("Should meet...")
-* Add reward(s) that your members can get once they satisfy the requirement(s)
-* Save changes
-* Create new roles by clicking on the "Empty role" button below the roles&#x20;
+Roles are how you control who gets what in your community. Each role can have different requirements to join and different rewards.
 
-<figure><img src=".gitbook/assets/Edit role.png" alt=""><figcaption></figcaption></figure>
+#### Configure your default role
 
-#### 3. Preview and launch
+**1. Access the role editor**
 
-* Use **"View page as a visitor"** to see exactly what members will experience
-* Check that requirements work correctly and rewards are set up properly
-* Make sure your branding and messaging are clear
+* Go to the **"Editor"** tab in your admin dashboard
+* You'll see a default role called "Member" - this is your community's starting point\
 
-**Go live:**
 
-* Once everything looks good, your **Guild URL** is ready to share
-* Start with your existing community on Discord, Twitter, or Telegram
-* You can always add more roles, pages, and features as your community grows
+**2. Make it yours**
 
-**Next steps:** Most projects start simple with one gated role, then build out quests, membership tiers, and specialized roles over time.
+* Upload a role image (128x128px works best)
+* Edit the role title and description to explain what this role is about
+* Keep it clear - this is often the first role people will see\
+
+
+**3. Set your requirements**
+
+* Click **"Add requirements"** to control who can access this role
+* Edit the requirement image and text, or keep the default settings
+* Common first requirements: Follow on Twitter, join Discord, or hold a specific token
+* Use **"Should not satisfy"** to exclude certain members
+* Adjust **"Should meet..."** at the top to decide if members need all requirements or just some\
+
+
+**4. Add rewards**
+
+* Click **"Add reward"** to give members something valuable
+* Popular rewards: Discord roles, NFTs, and points
+* Rewards activate automatically when members meet requirements\
+
+
+**5. Save and create more**
+
+* Save your changes to activate the role
+* Click **"Empty role"** below existing roles to create additional roles
+
+{% hint style="info" %}
+Most successful projects put their basic community roles - like Join Discord, Follow Twitter - on their home page, then create separate pages for campaigns or specialized subgroups like developers.
+{% endhint %}
+
+<figure><img src=".gitbook/assets/Edit role.png" alt=""><figcaption><p>Edit roles</p></figcaption></figure>
+
+#### Test and go live
+
+**Preview your work**
+
+* Use **"View page as a visitor"** to experience what members will see
+* Test that requirements work correctly and rewards claim properly
+* Make sure your messaging is clear and the flow is simple
+
+**Launch your community**
+
+* Once everything looks good, your Guild URL is ready to share
+
+
+
+Most projects begin with 2-5 key roles on their home page, then add membership tiers, quests, and specialized roles on new pages as their community grows.
+
