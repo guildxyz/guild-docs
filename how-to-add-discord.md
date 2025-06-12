@@ -19,6 +19,7 @@ Connect your Discord server to Guild so you can give members Discord roles as re
 **2. Set bot permissions**
 
 * **Important:** Move the Guild bot to the top of your Discord server's "Roles" tab (this ensures it can manage roles below it)
+* To manage bot permissions, go to the Guild bot and select **"Edit"**
 * The bot needs specific permissions to work properly:
   * **Must-have:** Manage Roles (required to give/remove Discord roles)
   * **Recommended:** Manage Server, Create Invite (helps with server management and invite creation)
