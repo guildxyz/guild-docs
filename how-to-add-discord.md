@@ -47,4 +47,4 @@ Create Discord roles that match your Guild roles - like "Verified Member" or "To
 4. They automatically receive the Discord role
 5. They gain access to gated channels and perks
 
-**What's next:** Most projects manage all their Discord roles through Guild. If you have existing Discord roles, you can connect them to Guild roles without creating new ones.
+Most projects manage all their Discord roles through Guild. If you have existing Discord roles, you can connect them to Guild roles without creating new ones.
