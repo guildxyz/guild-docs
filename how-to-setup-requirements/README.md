@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # How to setup requirements
 
 Requirements are the conditions members must meet to access roles and their rewards.
