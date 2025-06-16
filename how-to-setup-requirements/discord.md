@@ -11,10 +11,10 @@ Check when members created their Discord account to filter based on account age 
 * In the role editor, click **"Add requirements"** and go to **Discord**
 * Choose **Account age** from the options
 * Select a date and choose your logic:
-* **On** - Account created exactly on this date
-* **After** - Account created after this date
-* **Before** - Account created before this date
-* **After or on / Before or on** - Include the exact date
+  * **On** - Account created exactly on this date
+  * **After** - Account created after this date
+  * **Before** - Account created before this date
+  * **After or on / Before or on** - Include the exact date
 * Customize the requirement name and image if you want
 * Click **"Add requirement"**
 
