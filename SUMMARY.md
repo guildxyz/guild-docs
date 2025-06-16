@@ -23,7 +23,7 @@
 ***
 
 * [How to setup requirements](how-to-setup-requirements/README.md)
-  * [Page 3](how-to-setup-requirements/page-3.md)
+  * [Allowlist](how-to-setup-requirements/allowlist.md)
 * [Page](page/README.md)
   * [Page 2](page/page-2.md)
 
