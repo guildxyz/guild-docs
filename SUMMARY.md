@@ -25,8 +25,7 @@
 * [How to setup requirements](how-to-setup-requirements/README.md)
   * [Allowlist](how-to-setup-requirements/page-3.md)
   * [Discord](how-to-setup-requirements/discord.md)
-* [Page](page/README.md)
-  * [Page 2](page/page-2.md)
+  * [EAS](how-to-setup-requirements/eas.md)
 
 ## Links
 
