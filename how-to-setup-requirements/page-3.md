@@ -18,7 +18,7 @@ An allowlist is a list of pre-approved wallet addresses or email addresses that 
 * Upload your .txt or .csv file
 * Name your allowlist to stay organized (e.g., "Early Testers", "Hackathon Winners 2024")
 * Optionally upload a custom image to visually identify the list
-* Save the requirement
+* Click **"Add requirement"**
 
 
 
