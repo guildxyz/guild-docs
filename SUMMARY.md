@@ -33,6 +33,8 @@
   * [Github](how-to-setup-requirements/github.md)
   * [Guild](how-to-setup-requirements/guild.md)
   * [Guild Points](how-to-setup-requirements/guild-points.md)
+  * [Visit link](how-to-setup-requirements/visit-link.md)
+  * [X (Twitter)](how-to-setup-requirements/x-twitter.md)
 
 ## Links
 
