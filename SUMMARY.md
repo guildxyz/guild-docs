@@ -28,6 +28,9 @@
   * [EAS](how-to-setup-requirements/eas.md)
   * [Email](how-to-setup-requirements/email.md)
   * [NFT Balance](how-to-setup-requirements/nft-balance.md)
+  * [Token balance](how-to-setup-requirements/token-balance.md)
+  * [Farcaster](how-to-setup-requirements/farcaster.md)
+  * [Github](how-to-setup-requirements/github.md)
 
 ## Links
 
