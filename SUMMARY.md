@@ -26,6 +26,8 @@
   * [Allowlist](how-to-setup-requirements/page-3.md)
   * [Discord](how-to-setup-requirements/discord.md)
   * [EAS](how-to-setup-requirements/eas.md)
+  * [Email](how-to-setup-requirements/email.md)
+  * [NFT Balance](how-to-setup-requirements/nft-balance.md)
 
 ## Links
 
