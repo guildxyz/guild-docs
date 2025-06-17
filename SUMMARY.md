@@ -31,6 +31,8 @@
   * [Token balance](how-to-setup-requirements/token-balance.md)
   * [Farcaster](how-to-setup-requirements/farcaster.md)
   * [Github](how-to-setup-requirements/github.md)
+  * [Guild](how-to-setup-requirements/guild.md)
+  * [Guild Points](how-to-setup-requirements/guild-points.md)
 
 ## Links
 
