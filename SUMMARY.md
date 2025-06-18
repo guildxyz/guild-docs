@@ -38,6 +38,7 @@
 * [How to setup rewards](how-to-setup-rewards/README.md)
   * [Discord role](how-to-setup-rewards/discord-role.md)
   * [Points](how-to-setup-rewards/points.md)
+  * [NFT reward](how-to-setup-rewards/nft-reward.md)
 
 ## Links
 
