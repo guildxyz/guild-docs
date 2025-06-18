@@ -47,3 +47,5 @@ Each NFT can only be attached to a single role.
 * Metadata updates dynamically reflect on already minted NFTs
 
 Unlike other rewards, members keep their NFTs permanently even if they lose role access, since the NFT is already minted onchain.
+
+<figure><img src="../.gitbook/assets/NFT reward.png" alt=""><figcaption><p>Collect NFT page</p></figcaption></figure>
