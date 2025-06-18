@@ -35,6 +35,7 @@
   * [Guild Points](how-to-setup-requirements/guild-points.md)
   * [Visit link](how-to-setup-requirements/visit-link.md)
   * [X (Twitter)](how-to-setup-requirements/x-twitter.md)
+* [How to setup rewards](how-to-setup-rewards.md)
 
 ## Links
 
