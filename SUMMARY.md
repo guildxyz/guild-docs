@@ -39,6 +39,7 @@
   * [Discord role](how-to-setup-rewards/discord-role.md)
   * [Points](how-to-setup-rewards/points.md)
   * [NFT reward](how-to-setup-rewards/nft-reward.md)
+  * [Telegram group](how-to-setup-rewards/telegram-group.md)
 
 ## Links
 
