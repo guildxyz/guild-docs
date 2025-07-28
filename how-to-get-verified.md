@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # How to get verified
 
 Guild verification makes your guild visible and searchable on our platform for Guild users.
