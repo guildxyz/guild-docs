@@ -37,6 +37,7 @@
   * [Guild Points](how-to-setup-requirements/guild-points.md)
   * [POAP](how-to-setup-requirements/poap.md)
   * [Visit link](how-to-setup-requirements/visit-link.md)
+  * [World ID profile](how-to-setup-requirements/world-id-profile.md)
   * [X (Twitter)](how-to-setup-requirements/x-twitter.md)
 * [How to setup rewards](how-to-setup-rewards/README.md)
   * [Discord role](how-to-setup-rewards/discord-role.md)
