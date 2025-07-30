@@ -35,6 +35,7 @@
   * [Github](how-to-setup-requirements/github.md)
   * [Guild](how-to-setup-requirements/guild.md)
   * [Guild Points](how-to-setup-requirements/guild-points.md)
+  * [POAP](how-to-setup-requirements/poap.md)
   * [Visit link](how-to-setup-requirements/visit-link.md)
   * [X (Twitter)](how-to-setup-requirements/x-twitter.md)
 * [How to setup rewards](how-to-setup-rewards/README.md)
