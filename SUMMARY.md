@@ -44,6 +44,7 @@
   * [Points](how-to-setup-rewards/points.md)
   * [NFT reward](how-to-setup-rewards/nft-reward.md)
   * [Telegram group](how-to-setup-rewards/telegram-group.md)
+  * [Secrets](how-to-setup-rewards/secrets.md)
 
 ## Copy of Guides
 
