@@ -29,6 +29,7 @@
   * [Email](how-to-setup-requirements/email.md)
   * [NFT Balance](how-to-setup-requirements/nft-balance.md)
   * [Token balance](how-to-setup-requirements/token-balance.md)
+  * [Contract query](how-to-setup-requirements/contract-query.md)
   * [Farcaster](how-to-setup-requirements/farcaster.md)
   * [Github](how-to-setup-requirements/github.md)
   * [Guild](how-to-setup-requirements/guild.md)
@@ -40,6 +41,8 @@
   * [Points](how-to-setup-rewards/points.md)
   * [NFT reward](how-to-setup-rewards/nft-reward.md)
   * [Telegram group](how-to-setup-rewards/telegram-group.md)
+
+## Copy of Guides
 
 ## Links
 
