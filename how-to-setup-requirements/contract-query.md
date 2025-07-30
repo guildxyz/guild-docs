@@ -12,16 +12,27 @@ Check if a smart contract method returns specific values when called. Perfect fo
     * Enter the **Contract address** you want to query
     * Choose the contract **Method** from the dropdown (Guild automatically fetches available methods from the contract ABI)
     * Fill in the **Input parameters** - Guild shows the exact fields needed with names, types, and indexes
-    * Select **Output to check** - choose which return value from the contract method to verify
-      * **Output index** - Smart contract methods can return multiple values. The index (0, 1, 2, etc.) specifies which returned value to check:
-        * Index 0 = first returned value
-        * Index 1 = second returned value
-        * Index 2 = third returned value, and so on\
+    *   Select **Output to check** - choose which return value from the contract method to verify
 
-      * **Output types:**
-        * **Output bigint** - Large numbers (token balances, timestamps, counts, IDs)
-        * **Output address** - Wallet addresses or contract addresses
-        * **Output boolean** - True/false values (eligibility checks, status flags)
+        *   **Output index** - Smart contract methods can return multiple values. The index (0, 1, 2, etc.) specifies which returned value to check:
+
+            * Index 0 = first returned value
+            * Index 1 = second returned value
+            * Index 2 = third returned value, and so on
+
+            \
+            &#xNAN;_&#x49;f a contract method returns `(uint256 balance, address owner, bool isActive)`, you would:_
+
+            * _Use index 0 to check the balance (bigint)_
+            * _Use index 1 to check the owner address_
+            * _Use index 2 to check if it's active (boolean)_
+
+
+
+        * **Output types:**
+          * **Output bigint** - Large numbers (token balances, timestamps, counts, IDs)
+          * **Output address** - Wallet addresses or contract addresses
+          * **Output boolean** - True/false values (eligibility checks, status flags)
 
 
 
