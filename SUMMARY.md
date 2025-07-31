@@ -46,7 +46,7 @@
   * [Telegram group](how-to-setup-rewards/telegram-group.md)
   * [Secrets](how-to-setup-rewards/secrets.md)
 
-## Copy of Guides
+## Resources
 
 ## Links
 
