@@ -35,6 +35,7 @@
   * [Github](how-to-setup-requirements/github.md)
   * [Guild](how-to-setup-requirements/guild.md)
   * [Guild Points](how-to-setup-requirements/guild-points.md)
+  * [Telegram](how-to-setup-requirements/telegram.md)
   * [POAP](how-to-setup-requirements/poap.md)
   * [Visit link](how-to-setup-requirements/visit-link.md)
   * [World ID profile](how-to-setup-requirements/world-id-profile.md)
