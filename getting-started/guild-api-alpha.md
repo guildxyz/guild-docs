@@ -1,7 +1,7 @@
 # Launch your guild
 
 {% hint style="info" %}
-**Guild v2 is currently in private alpha. To get your guild created, reach out to the Guild team.**
+**Guild v2 is currently in open beta. You can launch your guild at** [**era.guild.xyz/create**](https://era.guild.xyz/create)**.**
 {% endhint %}
 
 Once your guild has been created, you can start customizing it to match your project and community needs.
@@ -40,8 +40,8 @@ Once your guild has been created, you can start customizing it to match your pro
 * Edit your guild name and main URL (this becomes your permanent guild link)
 * Add your social media accounts (format: https://x.com/yourproject) - these appear on your home page for easy discovery
 * Customize the appearance with surface and accent (button) colors that match your brand
-* Choose your role style throughout your guild: **solid**, **acrylic**, or **glass**
+* Add admins to your guild
 
-<figure><img src="../.gitbook/assets/role styles.png" alt=""><figcaption><p>Role sytles</p></figcaption></figure>
+
 
 **Test your setup:** Switch back to visitor mode to see what members will experience.
