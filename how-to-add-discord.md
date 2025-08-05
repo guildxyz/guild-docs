@@ -30,7 +30,7 @@ Connect your Discord server to Guild so you can give members Discord roles as re
 
 * Create a **"get-roles"** channel on your Discord server
 * Write a description explaining what roles members can claim and why they should join
-* Share your Guild link (alpha.guild.xyz/YOURPROJECT)
+* Share your Guild link (era.guild.xyz/YOURPROJECT)
 * Pin the message so it's always visible to new members
 
 {% hint style="info" %}
