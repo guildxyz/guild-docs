@@ -73,12 +73,12 @@ Filter out fake accounts and bots using multiple verification layers.
 
 **Protection strategies:**
 
-* **Guild Citizenship:** Require a minimum humanity score that members have to collect to prove their humanity \[Learn more]
+* **Guild Citizenship:** Require a minimum humanity score that members have to collect to prove their humanity
 * **Wallet verification:** Require wallets with a 6+ month history, transactions on Ethereum, and minimal wallet balances
 * **Social verification:** Require X & Discord accounts created before 2024 with a minimum of 100 X followers
 * **Other**: Require a minimum Gitcoin passport score or a Coinbase attestation that verifies a member’s verified account on Coinbase.
 
-\[See all sybil filtering integrations]
+
 
 It’s up to you how many and how strict the requirements you set.
 

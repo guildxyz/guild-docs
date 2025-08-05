@@ -6,7 +6,7 @@ This documentation covers Guild v2, which is available at [era.guild.xyz](https:
 
 Guild is a tool that helps you grow and reward the right community members by tracking onchain and social activity. It manages access to Discord and Telegram, runs quests, and provides analytics to help you better understand your community.
 
-Guild connects your community across 60+ EVM chains and multiple platforms like Discord, Telegram, Twitter, GitHub, and more. \[Check all integrations]
+Guild connects your community across 60+ EVM chains and multiple platforms like Discord, Telegram, Twitter, GitHub, and more.
 
 Crypto projects use Guild for better community management. You see your members' wallet address(es) and their linked social accounts in one place, so you know who is an active onchain user and vocal supporter in your community channels.
 
