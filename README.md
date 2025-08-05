@@ -1,5 +1,9 @@
 # What is Guild
 
+{% hint style="info" %}
+This documentation covers Guild v2, which is available at [era.guild.xyz](https://era.guild.xyz/).
+{% endhint %}
+
 Guild is a tool that helps you grow and reward the right community members by tracking onchain and social activity. It manages access to Discord and Telegram, runs quests, and provides analytics to help you better understand your community.
 
 Guild connects your community across 60+ EVM chains and multiple platforms like Discord, Telegram, Twitter, GitHub, and more. \[Check all integrations]
