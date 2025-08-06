@@ -54,7 +54,7 @@
 ## Links
 
 * [Website](https://guild.xyz)
-* [Our Guild](https://guild.xyz/our-guild)
+* [Our Guild](https://era.guild.xyz/guild/)
 * [Twitter](https://twitter.com/guildxyz)
 
 ## Archive
