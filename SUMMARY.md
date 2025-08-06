@@ -49,6 +49,8 @@
 
 ## Resources
 
+* [Case studies](resources/case-studies.md)
+
 ## Links
 
 * [Website](https://guild.xyz)
