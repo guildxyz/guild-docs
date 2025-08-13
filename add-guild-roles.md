@@ -44,7 +44,7 @@ Roles are how you control who gets what in your community. Each role can have di
 Most successful projects put their basic community roles - like Join Discord, Follow Twitter - on their home page, then create separate pages for campaigns or specialized subgroups like developers.
 {% endhint %}
 
-<figure><img src=".gitbook/assets/Edit role.png" alt=""><figcaption><p>Edit roles</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Edit role (1).png" alt=""><figcaption><p>Edit roles</p></figcaption></figure>
 
 #### Test and go live
 
