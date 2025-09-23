@@ -56,6 +56,7 @@
 * [Website](https://guild.xyz)
 * [Our Guild](https://era.guild.xyz/guild/)
 * [Twitter](https://twitter.com/guildxyz)
+* [Discord](https://discord.com/invite/ZSkVnGucnq)
 
 ## Archive
 
