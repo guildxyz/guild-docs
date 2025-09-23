@@ -30,7 +30,7 @@ Once your guild has been created, you can start customizing it to match your pro
 * Drag pages to reorder them in your preferred sequence
 * Each page can have its own focus, but keep your home page simple and clear since members will see this first
 
-<figure><img src="../.gitbook/assets/Edit guild.png" alt=""><figcaption><p>Customize pages</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Setup guild.png" alt="Customize guild pages"><figcaption><p>Customize guild pages</p></figcaption></figure>
 
 
 

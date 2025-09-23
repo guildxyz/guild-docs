@@ -10,6 +10,8 @@ Think of it like a simple rule system:
 
 **Rewards** → What group members get
 
+<figure><img src=".gitbook/assets/Guild UI.png" alt=""><figcaption></figcaption></figure>
+
 ### Requirements
 
 Requirements are the conditions people must meet. These can be:
