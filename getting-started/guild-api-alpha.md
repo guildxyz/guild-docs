@@ -1,9 +1,5 @@
 # Launch your guild
 
-{% hint style="info" %}
-**Guild v2 is currently in open beta. You can launch your guild at** [**era.guild.xyz/create**](https://era.guild.xyz/create)**.**
-{% endhint %}
-
 Once your guild has been created, you can start customizing it to match your project and community needs.
 
 ### Customize your guild
@@ -21,8 +17,7 @@ Once your guild has been created, you can start customizing it to match your pro
 
 * Upload your logo (150x150px works best)
 * Edit the page title, URL, and description to introduce your project
-* Click **"Theme"** to upload a cover image (optimal size: 1920x1080px)\
-
+* Click **"Theme"** to upload a cover image (optimal size: 1920x1080px)<br>
 
 3. **Organize your content:**
 

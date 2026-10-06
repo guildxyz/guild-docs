@@ -16,12 +16,12 @@ Only project admins can request verification.
 
 ### How to request verification
 
-Send a DM on X (Twitter) to [@roland\_xyz](https://twitter.com/roland_xyz) with:
+Create a support ticket on Guild's website and share:
 
 * Your guild URL
 * Link to the public announcement of your guild launch
 
-If we already have a group chat, you can just request it there - no need to contact on X.
+If we already have a group chat, you can just request it there.
 
 We review each request individually and reserve the right to approve or reject applications without detailed explanation. We may revoke verified status at any time if projects change or issues arise.
 
